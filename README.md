@@ -1,8 +1,8 @@
-- 👋 Hi, I’m @jaymac00
-- 👀 I’m interested in coding and video games!
-- 🌱 I’m currently learning Python.
-- 💞️ I’m looking to collaborate on something hype if it comes up.
-- 📫 How to reach me is to first somehow know me.
+- Heyo! My name is James MacCarthy, but you can call me Jay.
+- My interests include cybersecurity and videogame development.
+- I am a senior in college taking courses such as computer networking and computer/network security.
+- I dabble in many kinds of minor coding projects to learn about different areas of programming.
+- I am only reachable by those who personally know me or by potential employers who have obtained my resume.
 
 <!---
 jaymac00/jaymac00 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
