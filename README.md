@@ -1,4 +1,4 @@
-- Heyo! My name is James MacCarthy, but you can call me Jay.
+- Heyo! My name is James, but you can call me Jay.
 - My interests include cybersecurity and videogame development.
 - I am a senior in college taking courses such as computer networking and computer/network security.
 - I dabble in many kinds of minor coding projects to learn about different areas of programming.
