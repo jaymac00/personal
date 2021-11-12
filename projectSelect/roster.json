@@ -718,5 +718,13 @@
 	"series":"Kingdom Hearts",
 	"alts":[""],
 	"echo":false
+	},
+	{
+	"id":"Random",
+	"name":"Random",
+	"number":null,
+	"series":null,
+	"alts":[""],
+	"echo":false
 	}
 ]

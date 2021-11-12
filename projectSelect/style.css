@@ -2,3 +2,10 @@ body{
 	font-family: Rockwell, Cambria, Garamond, Baskerville, Georgia, "Times New Roman";
 	text-align: center;
 }
+
+div {
+	margin-left: 25%;
+	margin-right: 25%;
+	max-width: 50%;
+	background-color: #E9E9E9
+}
