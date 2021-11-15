@@ -707,10 +707,10 @@ let checkboxes = "";
 for (let i = 0; i < roster.length; ++i) {
 	if (roster[i].series != null) {
 		checkboxes += "<label><img src=\"" + path + pxSize + roster[i].id + head + "\">"
-			+ "<input type=\"checkbox\" id=\"" + roster[i].id + "\" checked></label>";
+			+ "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked></label>";
 	} else {
 		checkboxes += "<label><img src=\"QuestionMark.png\">"
-			+ "<input type=\"checkbox\" id=\"" + roster[i].id + "\" checked></label>";
+			+ "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked></label>";
 	}
 }
 document.getElementById("checkboxes").innerHTML = "<br>" + checkboxes + "<br><br>";

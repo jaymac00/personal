@@ -688,6 +688,22 @@
 	"echo":false
 	},
 	{
+	"id":"Pythra",
+	"name":"Pyra/Mythra",
+	"number":null,
+	"series":"Xenoblade Chronicles",
+	"alts":[""],
+	"echo":false
+	},
+	{
+	"id":"Myra",
+	"name":"Mythra/Pyra",
+	"number":null,
+	"series":"Xenoblade Chronicles",
+	"alts":[""],
+	"echo":false
+	},
+	{
 	"id":"Pyra",
 	"name":"Pyra",
 	"number":79,
