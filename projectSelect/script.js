@@ -424,30 +424,6 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Mythra
 	"echo":false
 	},
 	{
-	"id":"MiiBrawler",
-	"name":"Mii Brawler",
-	"number":51,
-	"series":"Mii",
-	"alts":[""],
-	"echo":false
-	},
-	{
-	"id":"MiiSwordfighter",
-	"name":"Mii Swordfighter",
-	"number":52,
-	"series":"Mii",
-	"alts":[""],
-	"echo":false
-	},
-	{
-	"id":"MiiGunner",
-	"name":"Mii Gunner",
-	"number":53,
-	"series":"Mii",
-	"alts":[""],
-	"echo":false
-	},
-	{
 	"id":"Palutena",
 	"name":"Palutena",
 	"number":54,
@@ -684,6 +660,30 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Mythra
 	"name":"Sora",
 	"number":82,
 	"series":"Kingdom Hearts",
+	"alts":[""],
+	"echo":false
+	},
+	{
+	"id":"MiiBrawler",
+	"name":"Mii Brawler",
+	"number":51,
+	"series":"Mii",
+	"alts":[""],
+	"echo":false
+	},
+	{
+	"id":"MiiSwordfighter",
+	"name":"Mii Swordfighter",
+	"number":52,
+	"series":"Mii",
+	"alts":[""],
+	"echo":false
+	},
+	{
+	"id":"MiiGunner",
+	"name":"Mii Gunner",
+	"number":53,
+	"series":"Mii",
 	"alts":[""],
 	"echo":false
 	},
