@@ -708,7 +708,7 @@ for (let i = 0; i < roster.length; ++i) {
 			+ "<label for=\"" + roster[i].id + "\"><img src=\"./assets/fighters/50px-" + roster[i].id + "HeadSSBU.png\"></label>";
 	} else {
 		checkboxes += "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked>"
-			+ "<label for=\"" + roster[i].id + "\"><img src=\"QuestionMark.png\"></label>";
+			+ "<label for=\"" + roster[i].id + "\"><img src=\"./assets/fighters/QuestionMark.png\"></label>";
 	}
 }
 document.getElementById("checkboxes").innerHTML = "<br>" + checkboxes + "<br><br>";
@@ -733,12 +733,12 @@ function randomImg() {
 				+ "<br>" + fighter.name;
 		} else {
 			document.getElementById("random").innerHTML =
-				"<img src=\"QuestionMark.png\">"
+				"<img src=\"./assets/fighters/QuestionMark.png\">"
 				+ "<br>" + fighter.name;
 		}
 	} else {
 		document.getElementById("random").innerHTML =
-				"<img src=\"QuestionMark.png\">"
+				"<img src=\"./assets/fighters/QuestionMark.png\">"
 				+ "<br>No fighter is selected!";
 	}
 }
