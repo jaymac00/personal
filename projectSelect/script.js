@@ -699,6 +699,8 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 
 // stock icon path = ./assets/fighters/50px-[fighter id]HeadSSBU.png
 
+/* index.html initialization */
+
 let checkboxes = "";
 for (let i = 0; i < roster.length; ++i) {
 	if (roster[i].series != null) {
@@ -710,6 +712,10 @@ for (let i = 0; i < roster.length; ++i) {
 	}
 }
 document.getElementById("checkboxes").innerHTML = "<br>" + checkboxes + "<br><br>";
+
+/* index.html initialization */
+
+/* randomImg() function for index.html random button */
 
 function randomImg() {
 	let tmp = [];
@@ -736,3 +742,5 @@ function randomImg() {
 				+ "<br>No fighter is selected!";
 	}
 }
+
+/* randomImg() function for index.html random button */
