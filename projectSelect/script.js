@@ -1,4 +1,4 @@
-const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Mythra
+const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual), Mythra (individual)
 	{
 	"id":"Mario",
 	"name":"Mario",
@@ -640,9 +640,9 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Mythra
 	"echo":false
 	},
 	{
-	"id":"Pyra",
-	"name":"Pyra",
-	"number":79,
+	"id":"Pythra",
+	"name":"Pyra/Mythra",
+	"number":null,
 	"series":"Xenoblade Chronicles",
 	"alts":[""],
 	"echo":false
