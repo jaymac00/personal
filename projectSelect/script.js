@@ -697,17 +697,13 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	}
 ];
 
-// temp path for testing
-const path = "C:\\Users\\mille\\Pictures\\SSBU Stock Icons 50px\\";
-
-const pxSize = "50px-";
-const head = "HeadSSBU.png";
+// stock icon path = ./assets/fighters/50px-[fighter id]HeadSSBU.png
 
 let checkboxes = "";
 for (let i = 0; i < roster.length; ++i) {
 	if (roster[i].series != null) {
 		checkboxes += "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked>"
-			+ "<label for=\"" + roster[i].id + "\"><img src=\"" + path + pxSize + roster[i].id + head + "\"></label>";
+			+ "<label for=\"" + roster[i].id + "\"><img src=\"./assets/fighters/50px-" + roster[i].id + "HeadSSBU.png\"></label>";
 	} else {
 		checkboxes += "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked>"
 			+ "<label for=\"" + roster[i].id + "\"><img src=\"QuestionMark.png\"></label>";
@@ -727,7 +723,7 @@ function randomImg() {
 		let fighter = tmp[Math.floor(Math.random() * tmp.length)];
 		if (fighter.series != null) {
 			document.getElementById("random").innerHTML =
-				"<img src=\"" + path + pxSize + fighter.id + head + "\">"
+				"<img src=\"./assets/fighters/50px-" + fighter.id + "HeadSSBU.png\">"
 				+ "<br>" + fighter.name;
 		} else {
 			document.getElementById("random").innerHTML =
