@@ -8,3 +8,11 @@ div {
 	max-width: 650px;
 	background-color: #E9E9E9
 }
+
+input[type=checkbox] + label {
+	opacity: 0.15;
+}
+
+input[type=checkbox]:checked + label {
+	opacity: 1.0;
+}

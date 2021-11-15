@@ -706,11 +706,11 @@ const head = "HeadSSBU.png";
 let checkboxes = "";
 for (let i = 0; i < roster.length; ++i) {
 	if (roster[i].series != null) {
-		checkboxes += "<label><img src=\"" + path + pxSize + roster[i].id + head + "\">"
-			+ "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked></label>";
+		checkboxes += "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked>"
+			+ "<label for=\"" + roster[i].id + "\"><img src=\"" + path + pxSize + roster[i].id + head + "\"></label>";
 	} else {
-		checkboxes += "<label><img src=\"QuestionMark.png\">"
-			+ "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked></label>";
+		checkboxes += "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked>"
+			+ "<label for=\"" + roster[i].id + "\"><img src=\"QuestionMark.png\"></label>";
 	}
 }
 document.getElementById("checkboxes").innerHTML = "<br>" + checkboxes + "<br><br>";
