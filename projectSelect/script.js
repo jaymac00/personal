@@ -716,14 +716,27 @@ for (let i = 0; i < roster.length; ++i) {
 document.getElementById("checkboxes").innerHTML = "<br>" + checkboxes + "<br><br>";
 
 function randomImg() {
-	let fighter = roster[Math.floor(Math.random() * roster.length)];
-	if (fighter.series != null) {
-		document.getElementById("random").innerHTML =
-			"<img src=\"" + path + pxSize + fighter.id + head + "\">"
-			+ "<br>" + fighter.name;
+	let tmp = [];
+	for (let i = 0; i < roster.length; ++i) {
+		if (document.getElementById(roster[i].id).checked) {
+			tmp.push(roster[i]);
+		}
+	}
+	
+	if (tmp.length > 0) {
+		let fighter = tmp[Math.floor(Math.random() * tmp.length)];
+		if (fighter.series != null) {
+			document.getElementById("random").innerHTML =
+				"<img src=\"" + path + pxSize + fighter.id + head + "\">"
+				+ "<br>" + fighter.name;
+		} else {
+			document.getElementById("random").innerHTML =
+				"<img src=\"QuestionMark.png\">"
+				+ "<br>" + fighter.name;
+		}
 	} else {
 		document.getElementById("random").innerHTML =
-			"<img src=\"QuestionMark.png\">"
-			+ "<br>" + fighter.name;
+				"<img src=\"QuestionMark.png\">"
+				+ "<br>No fighter is selected!";
 	}
 }
