@@ -744,3 +744,23 @@ function randomImg() {
 }
 
 /* randomImg() function for index.html random button */
+
+/* toggle all on */
+
+function toggleOn() {
+	for (let i = 0; i < roster.length; ++i) {
+		document.getElementById(roster[i].id).checked = true;
+	}
+}
+
+/* toggle all on */
+
+/* toggle all off */
+
+function toggleOff() {
+	for (let i = 0; i < roster.length; ++i) {
+		document.getElementById(roster[i].id).checked = false;
+	}
+}
+
+/* toggle all off */
