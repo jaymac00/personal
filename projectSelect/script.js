@@ -1,3 +1,4 @@
+
 const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual), Mythra (individual)
 	{
 	"id":"Mario",
