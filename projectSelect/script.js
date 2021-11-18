@@ -702,22 +702,37 @@ let roster = [
 
 /* init() function for index.html initialization */
 function init() {
+	document.getElementById("random").innerHTML = "<image src=\"./assets/fighters/50px-RandomHeadSSBU.png\"><br>Press \"Random\" when ready!";
+	
 	let checkboxes = "";
 	for (let i = 0; i < roster.length; ++i) {
 		if (roster[i].alts != null) {
 			checkboxes += "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked>"
 				+ "<label for=\"" + roster[i].id + "\"><img src=\"./assets/fighters/50px-" + roster[i].id + "Head" + roster[i].alts[0] + "SSBU.png\"></label>";
-		} else if (roster[i].series != null) {
-			checkboxes += "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked>"
-				+ "<label for=\"" + roster[i].id + "\"><img src=\"./assets/fighters/50px-" + roster[i].id + "HeadSSBU.png\"></label>";
 		} else {
 			checkboxes += "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked>"
-				+ "<label for=\"" + roster[i].id + "\"><img src=\"./assets/fighters/QuestionMark.png\"></label>";
+				+ "<label for=\"" + roster[i].id + "\"><img src=\"./assets/fighters/50px-" + roster[i].id + "HeadSSBU.png\"></label>";
 		}
 	}
 	document.getElementById("checkboxes").innerHTML = checkboxes;
 }
 /* init() function for index.html initialization */
+
+/* feInit() function for index.html initialization */
+function feInit() {
+	document.getElementById("random").innerHTML = "<image src=\"./assets/fighters/50px-RandomHeadSSBU.png\"><br>Press \"Random\" when ready!";
+	
+	let checkboxes = "";
+	for (let i = 0; i < roster.length; ++i) {
+		if (roster[i].alts != null) {
+			checkboxes += "<img id=\"" + roster[i].id + "\" src=\"./assets/fighters/50px-" + roster[i].id + "Head" + roster[i].alts[0] + "SSBU.png\">";
+		} else {
+			checkboxes += "<img id=\"" + roster[i].id + "\" src=\"./assets/fighters/50px-" + roster[i].id + "HeadSSBU.png\">";
+		}
+	}
+	document.getElementById("checkboxes").innerHTML = checkboxes;
+}
+/* feInit() function for index.html initialization */
 
 /* random() function for index.html random button */
 function random() {
@@ -734,22 +749,18 @@ function random() {
 			document.getElementById("random").innerHTML =
 				"<img src=\"./assets/fighters/50px-" + fighter.id + "Head" + fighter.alts[0] + "SSBU.png\">"
 				+ "<br>" + fighter.name;
-		} else if (fighter.series != null) {
-			document.getElementById("random").innerHTML =
-				"<img src=\"./assets/fighters/50px-" + fighter.id + "HeadSSBU.png\">"
-				+ "<br>" + fighter.name;
 		} else {
 			document.getElementById("random").innerHTML =
-				"<img src=\"./assets/fighters/QuestionMark.png\">"
+				"<img src=\"./assets/fighters/50px-" + fighter.id + "HeadSSBU.png\">"
 				+ "<br>" + fighter.name;
 		}
 	} else {
 		document.getElementById("random").innerHTML =
-				"<img src=\"./assets/fighters/QuestionMark.png\">"
+				"<img src=\"./assets/fighters/50px-RandomHeadSSBU.png\">"
 				+ "<br>No fighter is selected!";
 	}
 }
-/* randomImg() function for index.html random button */
+/* random() function for index.html random button */
 
 /* toggle all on */
 function toggleOn() {
