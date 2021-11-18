@@ -16,6 +16,24 @@ body{
 	font-size: 36pt;
 }
 
+.navlink {
+	text-decoration: none;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.navlink:link {
+	color: #1E90FF;
+}
+
+.navlink:visited {
+	color: #1E90FF;
+}
+
+.navlink:hover {
+	color: #F28200;
+}
+
 .toggleBox {
 	margin: auto;
 	max-width: 650px;
