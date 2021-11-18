@@ -10,11 +10,16 @@
 		<link href="style.css" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
-		<h1>SSBU Fighter Randomizer</h1>
+		<div class="topnav">
+			<h1 class="title">SSBU Fighter Randomizer</h1>
+			<a href="#home">Home</a>
+			<a href="#ironman">Ironman</a>
+			<a href="#smashdown">Smashdown</a>
+		</div>
 		<p>Toggle stock icons to be used in random selection.<br>Press "Random" to randomly select a fighter.</p>
 		<button type="button" autofocus="autofocus" onclick="random()">Random</button>
 		<p id="random"><image src="./assets/fighters/QuestionMark.png"><br>Press "Random" when ready!<!--location for image given by script--></p>
-		<div id="checkboxes"><!--location for roster checkboxes--></div>
+		<div class="toggleBox" id="checkboxes"><!--location for roster checkboxes--></div>
 		<button type="button" onclick="toggleOn()">Toggle All On</button>
 		<button type="button" onclick="toggleOff()">Toggle All Off</button>
 		<script type="text/javascript" src="script.js"></script>

@@ -715,7 +715,7 @@ function init() {
 				+ "<label for=\"" + roster[i].id + "\"><img src=\"./assets/fighters/QuestionMark.png\"></label>";
 		}
 	}
-	document.getElementById("checkboxes").innerHTML = "<br>" + checkboxes + "<br><br>";
+	document.getElementById("checkboxes").innerHTML = checkboxes;
 }
 /* init() function for index.html initialization */
 

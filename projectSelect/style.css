@@ -1,12 +1,29 @@
 body{
 	font-family: Rockwell, Cambria, Garamond, Baskerville, Georgia, "Times New Roman";
 	text-align: center;
+	background-color: #1E90FF;
 }
 
-div {
+.topnav {
+	border-top: 25px solid #FF8C00;
+	border-right: 25px solid #F28200;
+	border-bottom: 25px solid #F28200;
+	border-left: 25px solid #FF8C00;
+	background-color: #E9E9E9;
+}
+
+.title {
+	font-size: 36pt;
+}
+
+.toggleBox {
 	margin: auto;
 	max-width: 650px;
-	background-color: #E9E9E9
+	border-top: 25px solid #FF8C00;
+	border-right: 25px solid #F28200;
+	border-bottom: 25px solid #F28200;
+	border-left: 25px solid #FF8C00;
+	background-color: #E9E9E9;
 }
 
 input[type=checkbox] + label {
