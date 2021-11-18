@@ -28,7 +28,7 @@
 	"name":"Samus",
 	"number":4,
 	"series":"Metroid",
-	"alts":[""],
+	"alts":["", "Blue", "Pink", "Brown", "Purple", "Green", "White", "Black"],
 	"echo":false
 	},
 	{
@@ -44,7 +44,7 @@
 	"name":"Yoshi",
 	"number":5,
 	"series":"Yoshi",
-	"alts":[""],
+	"alts":["", "Red", "Blue", "Yellow", "Pink", "Cyan", "Purple", "Crafted"],
 	"echo":false
 	},
 	{
@@ -68,7 +68,7 @@
 	"name":"Pikachu",
 	"number":8,
 	"series":"Pokémon",
-	"alts":[""],
+	"alts":["", "Red", "Green", "Yellow", "Blue", "Glasses", "Female", "Libre"],
 	"echo":false
 	},
 	{
@@ -108,7 +108,7 @@
 	"name":"Peach",
 	"number":13,
 	"series":"Super Mario",
-	"alts":[""],
+	"alts":["", "Yellow", "Red", "Blue", "Green", "White", "Fire", "Black"],
 	"echo":false
 	},
 	{
@@ -140,7 +140,7 @@
 	"name":"Sheik",
 	"number":16,
 	"series":"The Legend of Zelda",
-	"alts":[""],
+	"alts":["", "Red", "Indigo", "Purple", "Green", "Black", "Yellow", "White"],
 	"echo":false
 	},
 	{
@@ -148,7 +148,7 @@
 	"name":"Zelda",
 	"number":17,
 	"series":"The Legend of Zelda",
-	"alts":[""],
+	"alts":["", "Red", "Blue", "Violet", "Green", "Black", "Purple", "White"],
 	"echo":false
 	},
 	{
@@ -164,7 +164,7 @@
 	"name":"Pichu",
 	"number":19,
 	"series":"Pokémon",
-	"alts":[""],
+	"alts":["", "Cyan", "Red", "Grey", "Blue", "Spiky", "White", "Band"],
 	"echo":false
 	},
 	{
@@ -196,7 +196,7 @@
 	"name":"Young Link",
 	"number":22,
 	"series":"The Legend of Zelda",
-	"alts":[""],
+	"alts":["", "Red", "Blue", "White", "Pink", "Cyan", "Orange", "Black"],
 	"echo":false
 	},
 	{
@@ -220,7 +220,7 @@
 	"name":"Roy",
 	"number":25,
 	"series":"Fire Emblem",
-	"alts":[""],
+	"alts":["", "Red", "Green", "Violet", "Cyan", "Purple", "Pink", "Yellow"],
 	"echo":false
 	},
 	{
@@ -252,7 +252,7 @@
 	"name":"Pit",
 	"number":28,
 	"series":"Kid Icarus",
-	"alts":[""],
+	"alts":["", "Yellow", "Red", "Green", "Blue", "Black", "White", "Pink"],
 	"echo":false
 	},
 	{
@@ -268,7 +268,7 @@
 	"name":"Zero Suit Samus",
 	"number":29,
 	"series":"Metroid",
-	"alts":[""],
+	"alts":["", "Blue", "Red", "Black", "Green", "White", "ShortsOrange", "ShortsBlue"],
 	"echo":false
 	},
 	{
@@ -276,7 +276,7 @@
 	"name":"Wario",
 	"number":30,
 	"series":"WarioWare",
-	"alts":[""],
+	"alts":["", "Classic", "Red", "ClassicRed", "Yellow", "ClassicCyan", "Green", "ClassicGreen"],
 	"echo":false
 	},
 	{
@@ -284,7 +284,7 @@
 	"name":"Snake",
 	"number":31,
 	"series":"Metal Gear Solid",
-	"alts":[""],
+	"alts":["", "Black", "Red", "Blue", "Green", "White", "Chartreuse", "Brown"],
 	"echo":false
 	},
 	{
@@ -348,7 +348,7 @@
 	"name":"Sonic",
 	"number":38,
 	"series":"Sonic the Hedgehog",
-	"alts":[""],
+	"alts":["", "Purple", "Cyan", "White", "Black", "Yellow", "Orange", "Green"],
 	"echo":false
 	},
 	{
@@ -380,7 +380,7 @@
 	"name":"R.O.B.",
 	"number":42,
 	"series":"R.O.B.",
-	"alts":[""],
+	"alts":["Grey", "", "Yellow", "Purple", "Blue", "Green", "Cyan", "Red"],
 	"echo":false
 	},
 	{
@@ -388,7 +388,7 @@
 	"name":"Toon Link",
 	"number":43,
 	"series":"The Legend of Zelda",
-	"alts":[""],
+	"alts":["", "Red", "Blue", "Purple", "Brown", "Black", "Grey", "Teal"],
 	"echo":false
 	},
 	{
@@ -396,7 +396,7 @@
 	"name":"Wolf",
 	"number":44,
 	"series":"Star Fox",
-	"alts":[""],
+	"alts":["", "Brown", "Red", "Blue", "Green", "Orange", "Black", "Pink"],
 	"echo":false
 	},
 	{
@@ -404,7 +404,7 @@
 	"name":"Villager",
 	"number":45,
 	"series":"Animal Crossing",
-	"alts":[""],
+	"alts":["", "Pink", "Yellow", "Green", "Cyan", "Blue", "Purple", "Chartreuse"],
 	"echo":false
 	},
 	{
@@ -420,7 +420,7 @@
 	"name":"Wii Fit Trainer",
 	"number":47,
 	"series":"Wii Fit",
-	"alts":[""],
+	"alts":["", "Male", "Green", "MaleGreen", "Red", "MaleRed", "Yellow", "MaleYellow"],
 	"echo":false
 	},
 	{
@@ -428,7 +428,7 @@
 	"name":"Rosalina & Luma",
 	"number":48,
 	"series":"Super Mario",
-	"alts":[""],
+	"alts":["", "Pink", "Yellow", "Green", "Red", "Purple", "Black", "White"],
 	"echo":false
 	},
 	{
@@ -476,7 +476,7 @@
 	"name":"Palutena",
 	"number":54,
 	"series":"Kid Icarus",
-	"alts":[""],
+	"alts":["", "Pink", "Cyan", "Green", "Blue", "Red", "Black", "Purple"],
 	"echo":false
 	},
 	{
@@ -484,7 +484,7 @@
 	"name":"Pac-Man",
 	"number":55,
 	"series":"Pac-Man",
-	"alts":[""],
+	"alts":["", "Blue", "Yellow", "Black", "Purple", "White", "Red", "Plaid"],
 	"echo":false
 	},
 	{
@@ -492,7 +492,7 @@
 	"name":"Robin",
 	"number":56,
 	"series":"Fire Emblem",
-	"alts":[""],
+	"alts":["", "Female", "Green", "Red", "Blue", "Yellow", "White", "Pink"],
 	"echo":false
 	},
 	{
@@ -500,7 +500,7 @@
 	"name":"Shulk",
 	"number":57,
 	"series":"Xenoblade Chronicles",
-	"alts":[""],
+	"alts":["", "White", "Black", "Orange", "Blue", "Lavender", "Yellow", "Trunks"],
 	"echo":false
 	},
 	{
@@ -524,7 +524,7 @@
 	"name":"Ryu",
 	"number":60,
 	"series":"Street Fighter",
-	"alts":[""],
+	"alts":["", "Grey", "Cyan", "Black", "Orange", "Blue", "Green", "Purple"],
 	"echo":false
 	},
 	{
@@ -572,7 +572,7 @@
 	"name":"Ridley",
 	"number":65,
 	"series":"Metroid",
-	"alts":[""],
+	"alts":["", "Meta", "Red", "Blue", "Green", "Purple", "Yellow", "Grey"],
 	"echo":false
 	},
 	{
@@ -580,7 +580,7 @@
 	"name":"Simon",
 	"number":66,
 	"series":"Castlevania",
-	"alts":[""],
+	"alts":["", "Red", "Yellow", "Black", "Blue", "Purple", "Orange", "Indigo"],
 	"echo":false
 	},
 	{
@@ -588,7 +588,7 @@
 	"name":"Richter",
 	"number":66,
 	"series":"Castlevania",
-	"alts":[""],
+	"alts":["", "Red", "Purple", "Green", "Yellow", "Blue", "Black", "White"],
 	"echo":true
 	},
 	{
@@ -620,7 +620,7 @@
 	"name":"Piranha Plant",
 	"number":70,
 	"series":"Super Mario",
-	"alts":[""],
+	"alts":["", "Green", "Yellow", "Pink", "Black", "White", "Purple", "Blue"],
 	"echo":false
 	},
 	{
@@ -652,7 +652,7 @@
 	"name":"Terry",
 	"number":74,
 	"series":"Fatal Fury",
-	"alts":[""],
+	"alts":["", "Blue", "Brown", "Green", "Orange", "Grey", "Black", "Yellow"],
 	"echo":false
 	},
 	{
@@ -676,7 +676,7 @@
 	"name":"Steve",
 	"number":77,
 	"series":"Minecraft",
-	"alts":[""],
+	"alts":["", "Alex", "SteveWhite", "AlexWhite", "SteveBlack", "AlexBlue", "Zombie", "Enderman"],
 	"echo":false
 	},
 	{
@@ -684,7 +684,7 @@
 	"name":"Sephiroth",
 	"number":78,
 	"series":"Final Fantasy VII",
-	"alts":[""],
+	"alts":["", "Purple", "Green", "Red", "White", "Blue", "Coatless", "CoatlessViolet"],
 	"echo":false
 	},
 	{
@@ -732,7 +732,7 @@
 	"name":"Sora",
 	"number":82,
 	"series":"Kingdom Hearts",
-	"alts":[""],
+	"alts":["", "Two", "Dream", "Three", "Grey", "Red", "Blue", "White"],
 	"echo":false
 	},
 	{
@@ -740,7 +740,7 @@
 	"name":"Random",
 	"number":null,
 	"series":null,
-	"alts":[""],
+	"alts":null,
 	"echo":false
 	}
 ]
