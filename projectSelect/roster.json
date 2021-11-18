@@ -60,7 +60,7 @@
 	"name":"Fox",
 	"number":7,
 	"series":"Star Fox",
-	"alts":["", "Black", "Pink", "Green", "Orange", "White", "Yellow", "Purple"],
+	"alts":["", "Black", "Red", "Green", "Orange", "White", "Yellow", "Purple"],
 	"echo":false
 	},
 	{
@@ -612,7 +612,7 @@
 	"name":"Incineroar",
 	"number":69,
 	"series":"Pokémon",
-	"alts":["", "Green", "Black", "Blue", "Yellow", "Purple", "Grey", "White"],
+	"alts":["", "Green", "Black", "Blue", "Orange", "Purple", "Grey", "White"],
 	"echo":false
 	},
 	{

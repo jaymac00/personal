@@ -12,11 +12,12 @@
 	<body>
 		<h1>SSBU Fighter Randomizer</h1>
 		<p>Toggle stock icons to be used in random selection.<br>Press "Random" to randomly select a fighter.</p>
-		<button type="button" autofocus="autofocus" onclick="randomImg()">Random</button>
+		<button type="button" autofocus="autofocus" onclick="random()">Random</button>
 		<p id="random"><image src="./assets/fighters/QuestionMark.png"><br>Press "Random" when ready!<!--location for image given by script--></p>
 		<div id="checkboxes"><!--location for roster checkboxes--></div>
 		<button type="button" onclick="toggleOn()">Toggle All On</button>
 		<button type="button" onclick="toggleOff()">Toggle All Off</button>
 		<script type="text/javascript" src="script.js"></script>
+		<script>init();</script>
 	</body>
 </html>

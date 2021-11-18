@@ -1,11 +1,11 @@
 
-const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual), Mythra (individual)
+let roster = [
 	{
 	"id":"Mario",
 	"name":"Mario",
 	"number":1,
 	"series":"Super Mario",
-	"alts":[""],
+	"alts":["", "Striped", "Blue", "Black", "Green", "Purple", "Yellow", "White"],
 	"echo":false
 	},
 	{
@@ -13,7 +13,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Donkey Kong",
 	"number":2,
 	"series":"Donkey Kong",
-	"alts":[""],
+	"alts":["", "Black", "Red", "Blue", "Green", "White", "Yellow", "Pink"],
 	"echo":false
 	},
 	{
@@ -21,7 +21,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Link",
 	"number":3,
 	"series":"The Legend of Zelda",
-	"alts":[""],
+	"alts":["", "Green", "Red", "Grey", "Indigo", "Teal", "White", "Black"],
 	"echo":false
 	},
 	{
@@ -29,7 +29,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Samus",
 	"number":4,
 	"series":"Metroid",
-	"alts":[""],
+	"alts":["", "Blue", "Pink", "Brown", "Purple", "Green", "White", "Black"],
 	"echo":false
 	},
 	{
@@ -37,7 +37,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Dark Samus",
 	"number":4,
 	"series":"Metroid",
-	"alts":[""],
+	"alts":["", "Green", "Purple", "Red", "Yellow", "Grey", "Black", "Pink"],
 	"echo":true
 	},
 	{
@@ -45,7 +45,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Yoshi",
 	"number":5,
 	"series":"Yoshi",
-	"alts":[""],
+	"alts":["", "Red", "Blue", "Yellow", "Pink", "Cyan", "Purple", "Crafted"],
 	"echo":false
 	},
 	{
@@ -53,7 +53,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Kirby",
 	"number":6,
 	"series":"Kirby",
-	"alts":[""],
+	"alts":["", "Yellow", "Blue", "Red", "Green", "White", "Orange", "Purple"],
 	"echo":false
 	},
 	{
@@ -61,7 +61,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Fox",
 	"number":7,
 	"series":"Star Fox",
-	"alts":[""],
+	"alts":["", "Black", "Red", "Green", "Orange", "White", "Yellow", "Purple"],
 	"echo":false
 	},
 	{
@@ -69,7 +69,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Pikachu",
 	"number":8,
 	"series":"Pokémon",
-	"alts":[""],
+	"alts":["", "Red", "Green", "Yellow", "Blue", "Glasses", "Female", "Libre"],
 	"echo":false
 	},
 	{
@@ -77,7 +77,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Luigi",
 	"number":9,
 	"series":"Super Mario",
-	"alts":[""],
+	"alts":["", "Orange", "Pink", "Cyan", "White", "Purple", "Blue", "Yellow"],
 	"echo":false
 	},
 	{
@@ -85,7 +85,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Ness",
 	"number":10,
 	"series":"EarthBound",
-	"alts":[""],
+	"alts":["", "White", "Yellow", "Green", "Blue", "Black", "Cyan", "Purple"],
 	"echo":false
 	},
 	{
@@ -93,7 +93,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Captain Falcon",
 	"number":11,
 	"series":"F-Zero",
-	"alts":[""],
+	"alts":["", "Black", "Red", "Green", "Blue", "White", "Yellow", "Cyan"],
 	"echo":false
 	},
 	{
@@ -101,7 +101,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Jigglypuff",
 	"number":12,
 	"series":"Pokémon",
-	"alts":[""],
+	"alts":["", "Red", "White", "Blue", "Green", "Pink", "Nurse", "Glasses"],
 	"echo":false
 	},
 	{
@@ -109,7 +109,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Peach",
 	"number":13,
 	"series":"Super Mario",
-	"alts":[""],
+	"alts":["", "Yellow", "Red", "Blue", "Green", "White", "Fire", "Black"],
 	"echo":false
 	},
 	{
@@ -117,7 +117,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Daisy",
 	"number":13,
 	"series":"Super Mario",
-	"alts":[""],
+	"alts":["", "Green", "Pink", "Blue", "Red", "Purple", "White", "Black"],
 	"echo":true
 	},
 	{
@@ -125,7 +125,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Bowser",
 	"number":14,
 	"series":"Super Mario",
-	"alts":[""],
+	"alts":["", "Black", "Yellow", "Green", "Grey", "Orange", "Red", "Blue"],
 	"echo":false
 	},
 	{
@@ -133,7 +133,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Ice Climbers",
 	"number":15,
 	"series":"Ice Climber",
-	"alts":[""],
+	"alts":["", "Blue", "Green", "Indigo", "Red", "Brown", "White", "Orange"],
 	"echo":false
 	},
 	{
@@ -141,7 +141,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Sheik",
 	"number":16,
 	"series":"The Legend of Zelda",
-	"alts":[""],
+	"alts":["", "Red", "Indigo", "Purple", "Green", "Black", "Yellow", "White"],
 	"echo":false
 	},
 	{
@@ -149,7 +149,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Zelda",
 	"number":17,
 	"series":"The Legend of Zelda",
-	"alts":[""],
+	"alts":["", "Red", "Blue", "Violet", "Green", "Black", "Purple", "White"],
 	"echo":false
 	},
 	{
@@ -157,7 +157,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Dr. Mario",
 	"number":18,
 	"series":"Super Mario",
-	"alts":[""],
+	"alts":["", "Red", "Blue", "Green", "Black", "Yellow", "Purple", "Pink"],
 	"echo":false
 	},
 	{
@@ -165,7 +165,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Pichu",
 	"number":19,
 	"series":"Pokémon",
-	"alts":[""],
+	"alts":["", "Cyan", "Red", "Grey", "Blue", "Spiky", "White", "Band"],
 	"echo":false
 	},
 	{
@@ -173,7 +173,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Falco",
 	"number":20,
 	"series":"Star Fox",
-	"alts":[""],
+	"alts":["", "Orange", "Blue", "Red", "Green", "Black", "White", "Pink"],
 	"echo":false
 	},
 	{
@@ -181,7 +181,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Marth",
 	"number":21,
 	"series":"Fire Emblem",
-	"alts":[""],
+	"alts":["", "Red", "Green", "Black", "White", "Blue", "Yellow", "Purple"],
 	"echo":false
 	},
 	{
@@ -189,7 +189,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Lucina",
 	"number":21,
 	"series":"Fire Emblem",
-	"alts":[""],
+	"alts":["", "Green", "Black", "White", "Red", "Yellow", "Navy", "Purple"],
 	"echo":true
 	},
 	{
@@ -197,7 +197,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Young Link",
 	"number":22,
 	"series":"The Legend of Zelda",
-	"alts":[""],
+	"alts":["", "Red", "Blue", "White", "Pink", "Cyan", "Orange", "Black"],
 	"echo":false
 	},
 	{
@@ -205,7 +205,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Ganondorf",
 	"number":23,
 	"series":"The Legend of Zelda",
-	"alts":[""],
+	"alts":["", "Violet", "Blue", "Green", "Purple", "Brown", "White", "Grey"],
 	"echo":false
 	},
 	{
@@ -213,7 +213,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Mewtwo",
 	"number":24,
 	"series":"Pokémon",
-	"alts":[""],
+	"alts":["", "Orange", "Blue", "Brown", "Pink", "Yellow", "Cyan", "Purple"],
 	"echo":false
 	},
 	{
@@ -221,7 +221,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Roy",
 	"number":25,
 	"series":"Fire Emblem",
-	"alts":[""],
+	"alts":["", "Red", "Green", "Violet", "Cyan", "Purple", "Pink", "Yellow"],
 	"echo":false
 	},
 	{
@@ -229,7 +229,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Chrom",
 	"number":25,
 	"series":"Fire Emblem",
-	"alts":[""],
+	"alts":["", "Red", "Green", "Yellow", "Black", "Purple", "White", "Cyan"],
 	"echo":true
 	},
 	{
@@ -237,7 +237,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Mr. Game & Watch",
 	"number":26,
 	"series":"Game & Watch",
-	"alts":[""],
+	"alts":["", "Red", "Yellow", "Blue", "Teal", "Cyan", "Green", "White"],
 	"echo":false
 	},
 	{
@@ -245,7 +245,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Meta Knight",
 	"number":27,
 	"series":"Kirby",
-	"alts":[""],
+	"alts":["", "White", "Red", "Green", "Navy", "Pink", "Purple", "Grey"],
 	"echo":false
 	},
 	{
@@ -253,7 +253,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Pit",
 	"number":28,
 	"series":"Kid Icarus",
-	"alts":[""],
+	"alts":["", "Yellow", "Red", "Green", "Blue", "Black", "White", "Pink"],
 	"echo":false
 	},
 	{
@@ -261,7 +261,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Dark Pit",
 	"number":28,
 	"series":"Kid Icarus",
-	"alts":[""],
+	"alts":["", "Green", "Brown", "Yellow", "Red", "Blue", "White", "Purple"],
 	"echo":true
 	},
 	{
@@ -269,7 +269,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Zero Suit Samus",
 	"number":29,
 	"series":"Metroid",
-	"alts":[""],
+	"alts":["", "Blue", "Red", "Black", "Green", "White", "ShortsOrange", "ShortsBlue"],
 	"echo":false
 	},
 	{
@@ -277,7 +277,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Wario",
 	"number":30,
 	"series":"WarioWare",
-	"alts":[""],
+	"alts":["", "Classic", "Red", "ClassicRed", "Yellow", "ClassicCyan", "Green", "ClassicGreen"],
 	"echo":false
 	},
 	{
@@ -285,7 +285,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Snake",
 	"number":31,
 	"series":"Metal Gear Solid",
-	"alts":[""],
+	"alts":["", "Black", "Red", "Blue", "Green", "White", "Chartreuse", "Brown"],
 	"echo":false
 	},
 	{
@@ -293,7 +293,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Ike",
 	"number":32,
 	"series":"Fire Emblem",
-	"alts":[""],
+	"alts":["", "Brown", "Purple", "Red", "Yellow", "Green", "Blue", "Black"],
 	"echo":false
 	},
 	{
@@ -301,7 +301,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Pokémon Trainer",
 	"number":null,
 	"series":"Pokémon",
-	"alts":[""],
+	"alts":["", "Red", "Green", "Pink", "Yellow", "White", "Blue", "Purple"],
 	"echo":false
 	},
 	{
@@ -309,7 +309,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Diddy Kong",
 	"number":36,
 	"series":"Donkey Kong",
-	"alts":[""],
+	"alts":["", "White", "Pink", "Purple", "Green", "Blue", "Yellow", "Cyan"],
 	"echo":false
 	},
 	{
@@ -317,7 +317,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Lucas",
 	"number":37,
 	"series":"EarthBound",
-	"alts":[""],
+	"alts":["", "Orange", "Blue", "Red", "Grey", "Cyan", "Green", "Purple"],
 	"echo":false
 	},
 	{
@@ -325,7 +325,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Sonic",
 	"number":38,
 	"series":"Sonic the Hedgehog",
-	"alts":[""],
+	"alts":["", "Purple", "Cyan", "White", "Black", "Yellow", "Orange", "Green"],
 	"echo":false
 	},
 	{
@@ -333,7 +333,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"King Dedede",
 	"number":39,
 	"series":"Kirby",
-	"alts":[""],
+	"alts":["", "Pink", "Green", "Purple", "Cyan", "Grey", "Blue", "Black"],
 	"echo":false
 	},
 	{
@@ -341,7 +341,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Olimar",
 	"number":40,
 	"series":"Pikmin",
-	"alts":[""],
+	"alts":["", "Red", "Green", "Blue", "Alph", "AlphGreen", "AlphPink", "AlphRed"],
 	"echo":false
 	},
 	{
@@ -349,7 +349,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Lucario",
 	"number":41,
 	"series":"Pokémon",
-	"alts":[""],
+	"alts":["", "Purple", "White", "Grey", "Teal", "Navy", "Green", "Pink"],
 	"echo":false
 	},
 	{
@@ -357,7 +357,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"R.O.B.",
 	"number":42,
 	"series":"R.O.B.",
-	"alts":[""],
+	"alts":["Grey", "", "Yellow", "Purple", "Blue", "Green", "Cyan", "Red"],
 	"echo":false
 	},
 	{
@@ -365,7 +365,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Toon Link",
 	"number":43,
 	"series":"The Legend of Zelda",
-	"alts":[""],
+	"alts":["", "Red", "Blue", "Purple", "Brown", "Black", "Grey", "Teal"],
 	"echo":false
 	},
 	{
@@ -373,7 +373,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Wolf",
 	"number":44,
 	"series":"Star Fox",
-	"alts":[""],
+	"alts":["", "Brown", "Red", "Blue", "Green", "Orange", "Black", "Pink"],
 	"echo":false
 	},
 	{
@@ -381,7 +381,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Villager",
 	"number":45,
 	"series":"Animal Crossing",
-	"alts":[""],
+	"alts":["", "Pink", "Yellow", "Green", "Cyan", "Blue", "Purple", "Chartreuse"],
 	"echo":false
 	},
 	{
@@ -389,7 +389,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Mega Man",
 	"number":46,
 	"series":"Mega Man",
-	"alts":[""],
+	"alts":["", "Red", "Green", "Brown", "Cyan", "Chartreuse", "Orange", "Grey"],
 	"echo":false
 	},
 	{
@@ -397,7 +397,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Wii Fit Trainer",
 	"number":47,
 	"series":"Wii Fit",
-	"alts":[""],
+	"alts":["", "Male", "Green", "MaleGreen", "Red", "MaleRed", "Yellow", "MaleYellow"],
 	"echo":false
 	},
 	{
@@ -405,7 +405,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Rosalina & Luma",
 	"number":48,
 	"series":"Super Mario",
-	"alts":[""],
+	"alts":["", "Pink", "Yellow", "Green", "Red", "Purple", "Black", "White"],
 	"echo":false
 	},
 	{
@@ -413,7 +413,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Little Mac",
 	"number":49,
 	"series":"Punch-Out!!",
-	"alts":[""],
+	"alts":["", "Yellow", "White", "Blue", "Black", "Pink", "Wire", "Green"],
 	"echo":false
 	},
 	{
@@ -421,7 +421,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Greninja",
 	"number":50,
 	"series":"Pokémon",
-	"alts":[""],
+	"alts":["", "Red", "Pink", "Black", "Violet", "Green", "Grey", "Purple"],
 	"echo":false
 	},
 	{
@@ -429,7 +429,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Palutena",
 	"number":54,
 	"series":"Kid Icarus",
-	"alts":[""],
+	"alts":["", "Pink", "Cyan", "Green", "Blue", "Red", "Black", "Purple"],
 	"echo":false
 	},
 	{
@@ -437,7 +437,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Pac-Man",
 	"number":55,
 	"series":"Pac-Man",
-	"alts":[""],
+	"alts":["", "Blue", "Yellow", "Black", "Purple", "White", "Red", "Plaid"],
 	"echo":false
 	},
 	{
@@ -445,7 +445,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Robin",
 	"number":56,
 	"series":"Fire Emblem",
-	"alts":[""],
+	"alts":["", "Female", "Green", "Red", "Blue", "Yellow", "White", "Pink"],
 	"echo":false
 	},
 	{
@@ -453,7 +453,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Shulk",
 	"number":57,
 	"series":"Xenoblade Chronicles",
-	"alts":[""],
+	"alts":["", "White", "Black", "Orange", "Blue", "Lavender", "Yellow", "Trunks"],
 	"echo":false
 	},
 	{
@@ -461,7 +461,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Bowser Jr.",
 	"number":58,
 	"series":"Super Mario",
-	"alts":[""],
+	"alts":["", "Larry", "Roy", "Wendy", "Iggy", "Morton", "Lemmy", "Ludwig"],
 	"echo":false
 	},
 	{
@@ -469,7 +469,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Duck Hunt",
 	"number":59,
 	"series":"Duck Hunt",
-	"alts":[""],
+	"alts":["", "Black", "Blue", "Brown", "White", "Tan", "Yellow", "Red"],
 	"echo":false
 	},
 	{
@@ -477,7 +477,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Ryu",
 	"number":60,
 	"series":"Street Fighter",
-	"alts":[""],
+	"alts":["", "Grey", "Cyan", "Black", "Orange", "Blue", "Green", "Purple"],
 	"echo":false
 	},
 	{
@@ -485,7 +485,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Ken",
 	"number":60,
 	"series":"Street Fighter",
-	"alts":[""],
+	"alts":["", "Grey", "Blue", "White", "Green", "Yellow", "Cyan", "Black"],
 	"echo":true
 	},
 	{
@@ -493,7 +493,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Cloud",
 	"number":61,
 	"series":"Final Fantasy VII",
-	"alts":[""],
+	"alts":["", "Advent", "Blue", "AdventBlue", "Red", "AdventBlack", "Brown", "AdventPurple"],
 	"echo":false
 	},
 	{
@@ -501,7 +501,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Corrin",
 	"number":62,
 	"series":"Fire Emblem",
-	"alts":[""],
+	"alts":["", "Female", "Red", "Orange", "Blue", "Pink", "Green", "Black"],
 	"echo":false
 	},
 	{
@@ -509,7 +509,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Bayonetta",
 	"number":63,
 	"series":"Bayonetta 2",
-	"alts":[""],
+	"alts":["", "Original", "Yellow", "Green", "Red", "Pink", "White", "Blue"],
 	"echo":false
 	},
 	{
@@ -517,7 +517,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Inkling",
 	"number":64,
 	"series":"Splatoon",
-	"alts":[""],
+	"alts":["", "Blue", "Yellow", "Green", "Pink", "Cyan", "Purple", "Indigo"],
 	"echo":false
 	},
 	{
@@ -525,7 +525,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Ridley",
 	"number":65,
 	"series":"Metroid",
-	"alts":[""],
+	"alts":["", "Meta", "Red", "Blue", "Green", "Purple", "Yellow", "Grey"],
 	"echo":false
 	},
 	{
@@ -533,7 +533,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Simon",
 	"number":66,
 	"series":"Castlevania",
-	"alts":[""],
+	"alts":["", "Red", "Yellow", "Black", "Blue", "Purple", "Orange", "Indigo"],
 	"echo":false
 	},
 	{
@@ -541,7 +541,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Richter",
 	"number":66,
 	"series":"Castlevania",
-	"alts":[""],
+	"alts":["", "Red", "Purple", "Green", "Yellow", "Blue", "Black", "White"],
 	"echo":true
 	},
 	{
@@ -549,7 +549,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"King K. Rool",
 	"number":67,
 	"series":"Donkey Kong",
-	"alts":[""],
+	"alts":["", "Orange", "Blue", "Yellow", "Pink", "Black", "Brown", "White"],
 	"echo":false
 	},
 	{
@@ -557,7 +557,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Isabelle",
 	"number":68,
 	"series":"Animal Crossing",
-	"alts":[""],
+	"alts":["", "Yellow", "Pink", "Red", "Purple", "Teal", "Grey", "Blue"],
 	"echo":false
 	},
 	{
@@ -565,7 +565,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Incineroar",
 	"number":69,
 	"series":"Pokémon",
-	"alts":[""],
+	"alts":["", "Green", "Black", "Blue", "Orange", "Purple", "Grey", "White"],
 	"echo":false
 	},
 	{
@@ -573,7 +573,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Piranha Plant",
 	"number":70,
 	"series":"Super Mario",
-	"alts":[""],
+	"alts":["", "Green", "Yellow", "Pink", "Black", "White", "Purple", "Blue"],
 	"echo":false
 	},
 	{
@@ -581,7 +581,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Joker",
 	"number":71,
 	"series":"Persona 5",
-	"alts":[""],
+	"alts":["", "Purple", "Blue", "Yellow", "Red", "White", "School", "SchoolWhite"],
 	"echo":false
 	},
 	{
@@ -589,7 +589,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Hero",
 	"number":72,
 	"series":"Dragon Quest XI",
-	"alts":[""],
+	"alts":["", "Erdrick", "Solo", "Eight", "LuminaryRed", "ErdrickWhite", "SoloOrange", "EightBlue"],
 	"echo":false
 	},
 	{
@@ -597,7 +597,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Banjo & Kazooie",
 	"number":73,
 	"series":"Banjo-Kazooie",
-	"alts":[""],
+	"alts":["", "Pink", "Black", "Red", "White", "Yellow", "Blue", "Green"],
 	"echo":false
 	},
 	{
@@ -605,7 +605,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Terry",
 	"number":74,
 	"series":"Fatal Fury",
-	"alts":[""],
+	"alts":["", "Blue", "Brown", "Green", "Orange", "Grey", "Black", "Yellow"],
 	"echo":false
 	},
 	{
@@ -613,7 +613,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Byleth",
 	"number":75,
 	"series":"Fire Emblem",
-	"alts":[""],
+	"alts":["", "Female", "Blue", "Red", "Yellow", "Green", "Black", "Grey"],
 	"echo":false
 	},
 	{
@@ -621,7 +621,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Min Min",
 	"number":76,
 	"series":"Arms",
-	"alts":[""],
+	"alts":["", "Cyan", "Red", "Yellow", "Blue", "Green", "Pink", "Black"],
 	"echo":false
 	},
 	{
@@ -629,7 +629,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Steve",
 	"number":77,
 	"series":"Minecraft",
-	"alts":[""],
+	"alts":["", "Alex", "SteveWhite", "AlexWhite", "SteveBlack", "AlexBlue", "Zombie", "Enderman"],
 	"echo":false
 	},
 	{
@@ -637,7 +637,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Sephiroth",
 	"number":78,
 	"series":"Final Fantasy VII",
-	"alts":[""],
+	"alts":["", "Purple", "Green", "Red", "White", "Blue", "Coatless", "CoatlessViolet"],
 	"echo":false
 	},
 	{
@@ -645,7 +645,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Pyra/Mythra",
 	"number":null,
 	"series":"Xenoblade Chronicles",
-	"alts":[""],
+	"alts":["", "Green", "Swapped", "Gormotti", "Black", "Blue", "Saturated", "Metal"],
 	"echo":false
 	},
 	{
@@ -653,7 +653,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Kazuya",
 	"number":81,
 	"series":"Tekken",
-	"alts":[""],
+	"alts":["", "Suit", "Red", "White", "Blue", "Purple", "Black", "Yellow"],
 	"echo":false
 	},
 	{
@@ -661,7 +661,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Sora",
 	"number":82,
 	"series":"Kingdom Hearts",
-	"alts":[""],
+	"alts":["", "Two", "Dream", "Three", "Grey", "Red", "Blue", "White"],
 	"echo":false
 	},
 	{
@@ -669,7 +669,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Mii Brawler",
 	"number":51,
 	"series":"Mii",
-	"alts":[""],
+	"alts":null,
 	"echo":false
 	},
 	{
@@ -677,7 +677,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Mii Swordfighter",
 	"number":52,
 	"series":"Mii",
-	"alts":[""],
+	"alts":null,
 	"echo":false
 	},
 	{
@@ -685,7 +685,7 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Mii Gunner",
 	"number":53,
 	"series":"Mii",
-	"alts":[""],
+	"alts":null,
 	"echo":false
 	},
 	{
@@ -693,32 +693,34 @@ const roster = [ // roster json - Squirtle, Ivysaur, Charizard, Pyra (individual
 	"name":"Random",
 	"number":null,
 	"series":null,
-	"alts":[""],
+	"alts":null,
 	"echo":false
 	}
 ];
 
-// stock icon path = ./assets/fighters/50px-[fighter id]HeadSSBU.png
+// stock icon path = ./assets/fighters/50px-[fighter id]Head[optional alt]SSBU.png
 
-/* index.html initialization */
-
-let checkboxes = "";
-for (let i = 0; i < roster.length; ++i) {
-	if (roster[i].series != null) {
-		checkboxes += "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked>"
-			+ "<label for=\"" + roster[i].id + "\"><img src=\"./assets/fighters/50px-" + roster[i].id + "HeadSSBU.png\"></label>";
-	} else {
-		checkboxes += "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked>"
-			+ "<label for=\"" + roster[i].id + "\"><img src=\"./assets/fighters/QuestionMark.png\"></label>";
+/* init() function for index.html initialization */
+function init() {
+	let checkboxes = "";
+	for (let i = 0; i < roster.length; ++i) {
+		if (roster[i].alts != null) {
+			checkboxes += "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked>"
+				+ "<label for=\"" + roster[i].id + "\"><img src=\"./assets/fighters/50px-" + roster[i].id + "Head" + roster[i].alts[0] + "SSBU.png\"></label>";
+		} else if (roster[i].series != null) {
+			checkboxes += "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked>"
+				+ "<label for=\"" + roster[i].id + "\"><img src=\"./assets/fighters/50px-" + roster[i].id + "HeadSSBU.png\"></label>";
+		} else {
+			checkboxes += "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked>"
+				+ "<label for=\"" + roster[i].id + "\"><img src=\"./assets/fighters/QuestionMark.png\"></label>";
+		}
 	}
+	document.getElementById("checkboxes").innerHTML = "<br>" + checkboxes + "<br><br>";
 }
-document.getElementById("checkboxes").innerHTML = "<br>" + checkboxes + "<br><br>";
+/* init() function for index.html initialization */
 
-/* index.html initialization */
-
-/* randomImg() function for index.html random button */
-
-function randomImg() {
+/* random() function for index.html random button */
+function random() {
 	let tmp = [];
 	for (let i = 0; i < roster.length; ++i) {
 		if (document.getElementById(roster[i].id).checked) {
@@ -728,7 +730,11 @@ function randomImg() {
 	
 	if (tmp.length > 0) {
 		let fighter = tmp[Math.floor(Math.random() * tmp.length)];
-		if (fighter.series != null) {
+		if (fighter.alts != null) {
+			document.getElementById("random").innerHTML =
+				"<img src=\"./assets/fighters/50px-" + fighter.id + "Head" + fighter.alts[0] + "SSBU.png\">"
+				+ "<br>" + fighter.name;
+		} else if (fighter.series != null) {
 			document.getElementById("random").innerHTML =
 				"<img src=\"./assets/fighters/50px-" + fighter.id + "HeadSSBU.png\">"
 				+ "<br>" + fighter.name;
@@ -743,25 +749,20 @@ function randomImg() {
 				+ "<br>No fighter is selected!";
 	}
 }
-
 /* randomImg() function for index.html random button */
 
 /* toggle all on */
-
 function toggleOn() {
 	for (let i = 0; i < roster.length; ++i) {
 		document.getElementById(roster[i].id).checked = true;
 	}
 }
-
 /* toggle all on */
 
 /* toggle all off */
-
 function toggleOff() {
 	for (let i = 0; i < roster.length; ++i) {
 		document.getElementById(roster[i].id).checked = false;
 	}
 }
-
 /* toggle all off */
