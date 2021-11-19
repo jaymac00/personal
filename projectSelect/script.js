@@ -765,7 +765,7 @@ function random() {
 		if (fighter.alts != null && alts) {
 			let alt = randAlt();
 			str = "<img src=\"./assets/fighters/50px-" + fighter.id + "Head" + fighter.alts[alt] + "SSBU.png\">"
-				+ "<br>" + fighter.name + " (color " + alt + ")";
+				+ "<br>" + fighter.name + " (color " + (alt + 1) + ")";
 		} else if (fighter.series == "Mii" && miis) {
 			str = "<img src=\"./assets/fighters/50px-" + fighter.id + "HeadSSBU.png\">"
 				+ "<br>" + fighter.name + " (" + randMii() + ")";
