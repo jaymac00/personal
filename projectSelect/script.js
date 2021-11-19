@@ -700,6 +700,10 @@ let roster = [
 
 // stock icon path = ./assets/fighters/50px-[fighter id]Head[optional alt]SSBU.png
 
+//
+// random.html
+//
+
 /* init() function for random.html initialization */
 function init() {
 	document.getElementById("random").innerHTML = "<image src=\"./assets/fighters/50px-RandomHeadSSBU.png\"><br>Press \"Random\" when ready!";
@@ -757,12 +761,16 @@ function toggleOff() {
 }
 /* toggle all off */
 
+//
+// alts.html
+//
+
 /* altsInit() function for alts.html initialization */
 function altsInit() {
 	roster.pop();
 	roster.pop();
 	roster.pop();
-	roster.pop();
+	roster.pop(); // removes miis and random
 	document.getElementById("random").innerHTML = "<img src=\"./assets/fighters/50px-RandomHeadSSBU.png\"><br>Select any fighter below!";
 	
 	let buttons = "";
@@ -783,7 +791,44 @@ function randAlt() {
 				"<img src=\"./assets/fighters/50px-" + roster[i].id + "Head"
 				+ roster[i].alts[alt] + "SSBU.png\">"
 				+ "<br>" + roster[i].name + " (color " + (alt + 1) + ")";
+			break;
 		}
 	}
 }
 /* randAlt() function for alts.html fighter button */
+
+//
+// miimoveset.html
+//
+
+/* miiInit() function for miimoveset.html */
+function miiInit() {
+	document.getElementById("random").innerHTML = "<image src=\"./assets/fighters/50px-RandomHeadSSBU.png\"><br>Select Mii below!";
+	
+	let buttons = "";
+	buttons += "<input type=\"button\" id=\"MiiBrawler\" style=\"display:none;\" onclick=\"randMii()\">"
+		+ "<label for=\"MiiBrawler\"><img src=\"./assets/fighters/50px-MiiBrawlerHeadSSBU.png\"></label>";
+	buttons += "<input type=\"button\" id=\"MiiSwordfighter\" style=\"display:none;\" onclick=\"randMii()\">"
+		+ "<label for=\"MiiSwordfighter\"><img src=\"./assets/fighters/50px-MiiSwordfighterHeadSSBU.png\"></label>";
+	buttons += "<input type=\"button\" id=\"MiiGunner\" style=\"display:none;\" onclick=\"randMii()\">"
+		+ "<label for=\"MiiGunner\"><img src=\"./assets/fighters/50px-MiiGunnerHeadSSBU.png\"></label>";
+	document.getElementById("buttons").innerHTML = buttons;
+}
+/* miiInit() function for miimoveset.html */
+
+/* randMii() function for miimoveset.html */
+function randMii() {
+	for (let i = 83; i < 86; ++i) {
+		if (roster[i].id == event.target.id) {
+			document.getElementById("random").innerHTML =
+				"<img src=\"./assets/fighters/50px-" + roster[i].id + "HeadSSBU.png\">"
+				+ "<br>" + roster[i].name + " ("
+				+ (Math.floor(Math.random() * 3) + 1)
+				+ (Math.floor(Math.random() * 3) + 1)
+				+ (Math.floor(Math.random() * 3) + 1)
+				+ (Math.floor(Math.random() * 3) + 1) + ")";
+			break;
+		}
+	}
+}
+/* randMii() function for miimoveset.html */

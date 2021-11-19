@@ -65,6 +65,10 @@ div {
 .fighterBox {
 	max-width: 650px;
 }
+
+.miiBox {
+	max-width: 150px;
+}
 /* button/checkbox containers */
 
 /* random/option buttons */
