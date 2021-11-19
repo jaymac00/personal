@@ -701,14 +701,43 @@ let roster = [
 // stock icon path = ./assets/fighters/50px-[fighter id]Head[optional alt]SSBU.png
 
 //
+// navigation bar for all pages
+//
+
+/* init() */
+function init() {
+	document.getElementById("top").innerHTML =
+		"<h1 class=\"title\">SSBU Fighter Randomizer</h1>"
+		+ "<a class=\"navlink\" href=\"./index.html\" id=\"home\">Home</a>"
+		+ "<a class=\"navlink\" href=\"./random.html\" id=\"randomizer\">Random</a>"
+		+ "<a class=\"navlink\" href=\"./alts.html\" id=\"randomAlts\">Alts</a>"
+		+ "<a class=\"navlink\" href=\"./miimoveset.html\" id=\"randomMiis\">Mii Moveset</a>"
+		+ "<a class=\"navlink\" href=\"#ironman\">Ironman</a>"
+		+ "<a class=\"navlink\" href=\"#smashdown\">Smashdown</a>"
+		+ "<a class=\"navlink\" href=\"#squadstrike\">Squad Strike</a>"
+		+ "<a class=\"navlink\" href=\"#nuzlocke\">Nuzlocke</a>";
+}
+/* init() */
+
+//
+// index.html
+//
+
+/* homeInit() */
+function homeInit() {
+	document.getElementById("home").style.borderColor = "#000000";
+}
+/* homeInit() */
+
+//
 // random.html
 //
 
 let alts = false;
 let miis = false;
 
-/* init() function for random.html initialization */
-function init() {
+/* randInit() function for random.html initialization */
+function randInit() {
 	document.getElementById("random").innerHTML = "<image src=\"./assets/fighters/50px-RandomHeadSSBU.png\"><br>Press \"Randomize!\" when ready!";
 	
 	let checkboxes = "";
@@ -717,8 +746,9 @@ function init() {
 				+ "<label for=\"" + roster[i].id + "\"><img src=\"./assets/fighters/50px-" + roster[i].id + "HeadSSBU.png\"></label>";
 	}
 	document.getElementById("checkboxes").innerHTML = checkboxes;
+	document.getElementById("randomizer").style.borderColor = "#000000";
 }
-/* init() function for random.html initialization */
+/* randInit() function for random.html initialization */
 
 /* random() function for random.html random button */
 function random() {
@@ -805,6 +835,7 @@ function altsInit() {
 				+ "<label for=\"" + roster[i].id + "\"><img src=\"./assets/fighters/50px-" + roster[i].id + "HeadSSBU.png\"></label>";
 	}
 	document.getElementById("buttons").innerHTML = buttons;
+	document.getElementById("randomAlts").style.borderColor = "#000000";
 }
 /* altsInit() function for alts.html initialization */
 
@@ -840,6 +871,7 @@ function miiInit() {
 	buttons += "<input type=\"button\" id=\"MiiGunner\" style=\"display:none;\" onclick=\"randMii()\">"
 		+ "<label for=\"MiiGunner\"><img src=\"./assets/fighters/50px-MiiGunnerHeadSSBU.png\"></label>";
 	document.getElementById("buttons").innerHTML = buttons;
+	document.getElementById("randomMiis").style.borderColor = "#000000";
 }
 /* miiInit() function for miimoveset.html */
 

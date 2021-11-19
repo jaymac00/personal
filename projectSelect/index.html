@@ -10,21 +10,15 @@
 		<link href="style.css" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
-		<div class="topnav">
-			<h1 class="title">SSBU Fighter Randomizer</h1>
-			<a class="navlink" href="./index.html">Home</a>
-			<a class="navlink" href="./random.html">Random</a>
-			<a class="navlink" href="./alts.html">Alts</a>
-			<a class="navlink" href="./miimoveset.html">Mii Moveset</a>
-			<a class="navlink" href="#ironman">Ironman</a>
-			<a class="navlink" href="#smashdown">Smashdown</a>
-			<a class="navlink" href="#squadstrike">Squad Strike</a>
-			<a class="navlink" href="#nuzlocke">Nuzlocke</a>
-		</div>
+		<div class="topnav" id="top"><!--location for navbar prvided by script--></div>
 		<br>
 		<div class="selection">
 			Current Test Page
 		</div>
 		<script type="text/javascript" src="script.js"></script>
+		<script>
+			init();
+			homeInit();
+		</script>
 	</body>
 </html>
