@@ -1,15 +1,22 @@
-body{
+body {
 	font-family: Rockwell, Cambria, Garamond, Baskerville, Georgia, "Times New Roman";
 	text-align: center;
-	background-color: #1E90FF;
+	background-color: #000080;
 }
 
-.topnav {
-	border-top: 25px solid #FF8C00;
-	border-right: 25px solid #F28200;
-	border-bottom: 25px solid #F28200;
-	border-left: 25px solid #FF8C00;
+div {
+	margin: auto;
+	border-left: 15px solid #808080;
+	border-top: 15px solid #808080;
+	border-right: 15px solid #696969;
+	border-bottom: 15px solid #696969;
+	border-radius: 25px 0px;
 	background-color: #E9E9E9;
+}
+
+/* navigation bar */
+.topnav {
+	max-width: 1000px;
 }
 
 .title {
@@ -17,31 +24,64 @@ body{
 }
 
 .navlink {
+	font-weight: bold;
 	text-decoration: none;
 	padding-left: 15px;
 	padding-right: 15px;
 }
 
 .navlink:link {
-	color: #1E90FF;
+	color: #000000;
+	border-right: 5px solid #1E90FF;
+	border-top: 5px solid #1E90FF;
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: 20px;
 }
 
 .navlink:visited {
-	color: #1E90FF;
+	color: #000000;
+	border-right: 5px solid #1E90FF;
+	border-top: 5px solid #1E90FF;
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: 20px;
 }
 
 .navlink:hover {
-	color: #F28200;
+	color: #000000;
+	border-right: 5px solid #F28200;
+	border-top: 5px solid #F28200;
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+/* navigation bar */
+
+/* button/checkbox containers */
+.selection {
+	max-width: 325px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .toggleBox {
-	margin: auto;
 	max-width: 650px;
-	border-top: 25px solid #FF8C00;
-	border-right: 25px solid #F28200;
-	border-bottom: 25px solid #F28200;
-	border-left: 25px solid #FF8C00;
+}
+/* button/checkbox containers */
+
+button {
+	font-weight: bold;
+	border-right: 5px solid #1E90FF;
+	border-top: 5px solid #1E90FF;
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: 20px;
 	background-color: #E9E9E9;
+}
+
+button:hover {
+	border-right: 5px solid #F28200;
+	border-top: 5px solid #F28200;
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: 20px;
+	text-decoration: none;
 }
 
 input[type=checkbox] + label {
