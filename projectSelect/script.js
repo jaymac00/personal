@@ -700,41 +700,20 @@ let roster = [
 
 // stock icon path = ./assets/fighters/50px-[fighter id]Head[optional alt]SSBU.png
 
-/* init() function for index.html initialization */
+/* init() function for random.html initialization */
 function init() {
 	document.getElementById("random").innerHTML = "<image src=\"./assets/fighters/50px-RandomHeadSSBU.png\"><br>Press \"Random\" when ready!";
 	
 	let checkboxes = "";
 	for (let i = 0; i < roster.length; ++i) {
-		if (roster[i].alts != null) {
-			checkboxes += "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked>"
-				+ "<label for=\"" + roster[i].id + "\"><img src=\"./assets/fighters/50px-" + roster[i].id + "Head" + roster[i].alts[0] + "SSBU.png\"></label>";
-		} else {
-			checkboxes += "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked>"
+		checkboxes += "<input type=\"checkbox\" id=\"" + roster[i].id + "\" style=\"display:none;\" checked>"
 				+ "<label for=\"" + roster[i].id + "\"><img src=\"./assets/fighters/50px-" + roster[i].id + "HeadSSBU.png\"></label>";
-		}
 	}
 	document.getElementById("checkboxes").innerHTML = checkboxes;
 }
-/* init() function for index.html initialization */
+/* init() function for random.html initialization */
 
-/* feInit() function for index.html initialization */
-function feInit() {
-	document.getElementById("random").innerHTML = "<image src=\"./assets/fighters/50px-RandomHeadSSBU.png\"><br>Press \"Random\" when ready!";
-	
-	let checkboxes = "";
-	for (let i = 0; i < roster.length; ++i) {
-		if (roster[i].alts != null) {
-			checkboxes += "<img id=\"" + roster[i].id + "\" src=\"./assets/fighters/50px-" + roster[i].id + "Head" + roster[i].alts[0] + "SSBU.png\">";
-		} else {
-			checkboxes += "<img id=\"" + roster[i].id + "\" src=\"./assets/fighters/50px-" + roster[i].id + "HeadSSBU.png\">";
-		}
-	}
-	document.getElementById("checkboxes").innerHTML = checkboxes;
-}
-/* feInit() function for index.html initialization */
-
-/* random() function for index.html random button */
+/* random() function for random.html random button */
 function random() {
 	let tmp = [];
 	for (let i = 0; i < roster.length; ++i) {
@@ -760,7 +739,7 @@ function random() {
 				+ "<br>No fighter is selected!";
 	}
 }
-/* random() function for index.html random button */
+/* random() function for random.html random button */
 
 /* toggle all on */
 function toggleOn() {
@@ -777,3 +756,34 @@ function toggleOff() {
 	}
 }
 /* toggle all off */
+
+/* altsInit() function for alts.html initialization */
+function altsInit() {
+	roster.pop();
+	roster.pop();
+	roster.pop();
+	roster.pop();
+	document.getElementById("random").innerHTML = "<img src=\"./assets/fighters/50px-RandomHeadSSBU.png\"><br>Select any fighter below!";
+	
+	let buttons = "";
+	for (let i = 0; i < roster.length; ++i) {
+		buttons += "<input type=\"button\" id=\"" + roster[i].id + "\" style=\"display:none;\" onclick=\"randAlt()\">"
+				+ "<label for=\"" + roster[i].id + "\"><img src=\"./assets/fighters/50px-" + roster[i].id + "HeadSSBU.png\"></label>";
+	}
+	document.getElementById("buttons").innerHTML = buttons;
+}
+/* altsInit() function for alts.html initialization */
+
+/* randAlt() function for alts.html fighter button */
+function randAlt() {
+	alt = Math.floor(Math.random() * 8);
+	for (let i = 0; i < roster.length; ++i) {
+		if (roster[i].id == event.target.id) {
+			document.getElementById("random").innerHTML =
+				"<img src=\"./assets/fighters/50px-" + roster[i].id + "Head"
+				+ roster[i].alts[alt] + "SSBU.png\">"
+				+ "<br>" + roster[i].name + " (color " + (alt + 1) + ")";
+		}
+	}
+}
+/* randAlt() function for alts.html fighter button */

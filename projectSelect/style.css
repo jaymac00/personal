@@ -62,12 +62,13 @@ div {
 	padding-bottom: 10px;
 }
 
-.toggleBox {
+.fighterBox {
 	max-width: 650px;
 }
 /* button/checkbox containers */
 
-button {
+/* random/option buttons */
+.options {
 	font-weight: bold;
 	border-right: 5px solid #1E90FF;
 	border-top: 5px solid #1E90FF;
@@ -76,13 +77,12 @@ button {
 	background-color: #E9E9E9;
 }
 
-button:hover {
+.options:hover {
 	border-right: 5px solid #F28200;
 	border-top: 5px solid #F28200;
-	border-bottom-right-radius: 20px;
-	border-top-left-radius: 20px;
 	text-decoration: none;
 }
+/* random/option buttons */
 
 input[type=checkbox] + label {
 	opacity: 0.15;
