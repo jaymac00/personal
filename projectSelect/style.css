@@ -73,7 +73,8 @@ div {
 
 /* random/option buttons */
 .options {
-	font-weight: bold;
+	padding-left:10px;
+	padding-right:10px;
 	border-right: 5px solid #1E90FF;
 	border-top: 5px solid #1E90FF;
 	border-bottom-right-radius: 20px;
@@ -88,10 +89,14 @@ div {
 }
 /* random/option buttons */
 
-input[type=checkbox] + label {
-	opacity: 0.15;
+input[name=fighter] + label {
+	opacity: 0.3;
 }
 
-input[type=checkbox]:checked + label {
+input[name=fighter]:checked + label {
 	opacity: 1.0;
+}
+
+input[name=fighter]:hover + label {
+	opacity: 0.65;
 }

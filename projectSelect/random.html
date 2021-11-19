@@ -24,14 +24,23 @@
 		<br>
 		<div class="selection">
 			<p id="random"><!--location for image given by script--></p>
-			<button class="options" type="button" onclick="random()">Randomize!</button>
+			<input type="button" id="randomize" onclick="random()" style="display:none">
+			<label for="randomize" class="options">Randomize!</label>
 		</div>
 		<br>
 		<div class="fighterBox" id="checkboxes"><!--location for roster checkboxes--></div>
 		<br>
 		<div class="selection">
-			<button class="options" type="button" onclick="toggleOn()">Toggle All On</button>
-			<button class="options" type="button" onclick="toggleOff()">Toggle All Off</button>
+			<input type="button" id="toggleOn" onclick="toggleOn()" style="display:none">
+			<label for="toggleOn" class="options">Toggle All On</label>
+			<input type="button" id="toggleOff" onclick="toggleOff()" style="display:none">
+			<label for="toggleOff" class="options">Toggle All Off</label>
+			<br>
+			<br>
+			<input type="button" id="alts" style="display:none">
+			<label for="alts" class="options"onclick="altsToggle()">Alts: OFF</label>
+			<input type="button" id="miimoveset" style="display:none">
+			<label for="miimoveset" class="options" onclick="miiToggle()">Mii Moveset: OFF</label>
 		</div>
 		<script type="text/javascript" src="script.js"></script>
 		<script>init();</script>
