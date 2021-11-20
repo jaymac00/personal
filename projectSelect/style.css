@@ -55,6 +55,11 @@ div {
 }
 /* navigation bar */
 
+.welcome {
+	max-width: 475px;
+	padding: 10px;
+}
+
 /* button/checkbox containers */
 .selection {
 	max-width: 325px;

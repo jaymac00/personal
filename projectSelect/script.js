@@ -1,4 +1,6 @@
-
+//
+// roster as seen on character select screen
+//
 let roster = [
 	{
 	"id":"Mario",
@@ -827,7 +829,7 @@ function miiToggle() {
 
 /* altsInit() function for alts.html initialization */
 function altsInit() {
-	document.getElementById("random").innerHTML = "<img src=\"./assets/fighters/50px-RandomHeadSSBU.png\"><br>Select any fighter below!";
+	document.getElementById("random").innerHTML = "<img src=\"./assets/fighters/50px-RandomHeadSSBU.png\"><br>Select fighter below!";
 	
 	let buttons = "";
 	for (let i = 0; i < 83; ++i) {
