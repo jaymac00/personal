@@ -714,7 +714,7 @@ function init() {
 		+ "<a class=\"navlink\" href=\"./random.html\" id=\"randomizer\">Random</a>"
 		+ "<a class=\"navlink\" href=\"./alts.html\" id=\"randomAlts\">Alts</a>"
 		+ "<a class=\"navlink\" href=\"./miimoveset.html\" id=\"randomMiis\">Mii Moveset</a>"
-		+ "<a class=\"navlink\" href=\"#ironman\">Ironman</a>"
+		+ "<a class=\"navlink\" href=\"./ironman.html\" id=\"randomIronman\">Ironman</a>"
 		+ "<a class=\"navlink\" href=\"#smashdown\">Smashdown</a>"
 		+ "<a class=\"navlink\" href=\"#squadstrike\">Squad Strike</a>"
 		+ "<a class=\"navlink\" href=\"#nuzlocke\">Nuzlocke</a>";
@@ -740,7 +740,7 @@ let miis = false;
 
 /* randInit() function for random.html initialization */
 function randInit() {
-	document.getElementById("random").innerHTML = "<image src=\"./assets/fighters/50px-RandomHeadSSBU.png\"><br>Press \"Randomize!\" when ready!";
+	document.getElementById("random").innerHTML = "<image src=\"./assets/fighters/50px-RandomHeadSSBU.png\"><br>Press \"Randomize\" when ready!";
 	
 	let checkboxes = "";
 	for (let i = 0; i < roster.length; ++i) {
@@ -894,3 +894,66 @@ function randMii() {
 	return mii;
 }
 /* randMii() function for miimoveset.html */
+
+//
+// ironman.html
+//
+
+let tmp = roster;
+tmp.pop();
+let success = -1;
+let prior = 0;
+
+/* feInit() function for ironman.html initialization */
+function feInit() {
+	document.getElementById("random").innerHTML = "<img src=\"./assets/fighters/50px-RandomHeadSSBU.png\"><br>Press \"Go\" to begin!";
+	
+	let icons = "";
+	for (let i = 0; i < 86; ++i) {
+		icons += "<img src=\"./assets/fighters/50px-" + roster[i].id + "HeadSSBU.png\" id=\"" + roster[i].id + "\" style=\"opacity:1.0\">";
+	}
+	document.getElementById("icons").innerHTML = icons;
+	document.getElementById("randomIronman").style.borderColor = "#000000";
+}
+/* feInit() function for ironman.html initialization */
+
+/* randFe() function for ironman.html */
+function randFe() {
+	if (event.target.id == "ironman") {
+
+		if (tmp.length == 1) {
+			document.getElementsByName("go")[0].innerHTML = "Complete";
+			let fighter = tmp[0];
+			document.getElementById("random").innerHTML = 
+				"<img src=\"./assets/fighters/50px-" + fighter.id + "HeadSSBU.png\">"
+				+ "<br>" + fighter.name;
+			document.getElementById(fighter.id).style.opacity = 0.3;
+			return;
+		} else if (tmp.length == 0) {
+			
+		}
+		
+		document.getElementsByName("go")[0].innerHTML = "Continue";
+		document.getElementsByName("restart")[0].style.display = "inline";
+	
+		let fighter = tmp.splice(Math.floor(Math.random() * tmp.length), 1)[0];
+		document.getElementById("random").innerHTML = 
+			"<img src=\"./assets/fighters/50px-" + fighter.id + "HeadSSBU.png\">"
+			+ "<br>" + fighter.name;
+		document.getElementById(fighter.id).style.opacity = 0.3;
+		++success;
+	} else if (event.target.id == "reset") {
+		tmp = roster;
+		tmp.pop();
+		for (let i = 0; i < tmp.length; ++i) {
+			document.getElementById(tmp[i].id).style.opacity = 1.0;
+		}
+		prior = success;
+		success = 0;
+		document.getElementsByName("go")[0].innerHTML = "Go";
+		document.getElementsByName("restart")[0].style.display = "none";
+		document.getElementById("success").innerHTML = "Current Run: " + success;
+		document.getElementById("prior").innerHTML = "Previous Run: " + prior;
+	}
+}
+/* randFe() function for ironman.html */
