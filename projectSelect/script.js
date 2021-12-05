@@ -1597,7 +1597,11 @@ let prior = 0;
 /* feInit() function for ironman.html initialization */
 function feInit() {
 	document.getElementById("random").innerHTML = "<img src=\"./assets/fighters/50px-RandomHeadSSBU.png\"><br>Press \"Go\" to begin!";
-	
+	document.getElementById("begin").innerHTML = 
+		"<input type=\"button\" id=\"ironman\" onclick=\"randFe()\" style=\"display:none\">"
+		+ "<label for=\"ironman\" class=\"options\" name=\"go\">Go</label>"
+		+ "<input type=\"button\" id=\"reset\" onclick=\"randFe()\" style=\"display:none\">"
+		+ "<label for=\"reset\" class=\"options\" style=\"display:none\" name=\"restart\">Restart</label>";
 	document.getElementById("remaining").innerHTML = "Fighters Remaining: " + remaining;
 	document.getElementById("success").innerHTML = "Current Run: 0";
 	document.getElementById("prior").innerHTML = "Previous Run: " + prior;
