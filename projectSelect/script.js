@@ -737,6 +737,7 @@ function homeInit() {
 
 let alts = false;
 let miis = false;
+let remove = false;
 
 /* randInit() function for random.html initialization */
 function randInit() {
@@ -774,6 +775,10 @@ function random() {
 		} else {
 			str = "<img src=\"./assets/fighters/50px-" + fighter.id + "HeadSSBU.png\">"
 				+ "<br>" + fighter.name;
+		}
+		
+		if (remove) {
+			document.getElementById(fighter.id).checked = false;
 		}
 	} else {
 		str = "<img src=\"./assets/fighters/50px-RandomHeadSSBU.png\"><br>No fighter is selected!";
@@ -822,6 +827,18 @@ function miiToggle() {
 	}
 }
 /* toggle mii moveset */
+
+/* toggle remove */
+function removeToggle() {
+	if (remove) {
+		event.target.innerHTML = "Remove Selected: OFF";
+		remove = false;
+	} else {
+		event.target.innerHTML = "Remove Selected: ON";
+		remove = true;
+	}
+}
+/* toggle remove */
 
 //
 // alts.html

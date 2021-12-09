@@ -62,7 +62,21 @@ div {
 
 /* button/checkbox containers */
 .selection {
-	max-width: 325px;
+	max-width: 350px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.row{
+	display: flex;
+}
+
+.column {
+	flex: 50%;
+}
+
+.toggles {
+	max-width: 500px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }

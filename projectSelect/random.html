@@ -20,7 +20,7 @@
 		<br>
 		<div class="fighterBox" id="checkboxes"><!--location for roster checkboxes--></div>
 		<br>
-		<div class="selection">
+		<div class="toggles">
 			<input type="button" id="toggleOn" onclick="toggleOn()" style="display:none">
 			<label for="toggleOn" class="options">Toggle All On</label>
 			<input type="button" id="toggleOff" onclick="toggleOff()" style="display:none">
@@ -31,6 +31,8 @@
 			<label for="alts" class="options"onclick="altsToggle()">Alts: OFF</label>
 			<input type="button" id="miimoveset" style="display:none">
 			<label for="miimoveset" class="options" onclick="miiToggle()">Mii Moveset: OFF</label>
+			<input type="button" id="remove" style="display:none">
+			<label for="remove" class="options" onclick="removeToggle()">Remove Selected: OFF</label>
 		</div>
 		<script type="text/javascript" src="script.js"></script>
 		<script>
