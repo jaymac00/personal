@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Jay MacCarthy">
+		<meta name="description" content="SSBU random fighter selection">
+		<meta name="keywords" content="SSBU, Smash Bros, random">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SSBU Fighter Randomizer</title>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<div class="topnav"  id="top"><!--location for navbar prvided by script--></div>
+		<br>
+		<div class="selection">
+			<p id="random"><!--location for image given by script--></p>
+			<input type="button" id="randomize" onclick="randSquad()" style="display:none">
+			<label for="randomize" class="options">Randomize</label>
+				<select>
+					<option value="0">Select Squad Size</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+		</div>
+		<br>
+		<div class="fighterBox" id="checkboxes"><!--location for roster checkboxes--></div>
+		<br>
+		<div class="toggles">
+			<input type="button" id="toggleOn" onclick="toggleOn()" style="display:none">
+			<label for="toggleOn" class="options">Toggle All On</label>
+			<input type="button" id="toggleOff" onclick="toggleOff()" style="display:none">
+			<label for="toggleOff" class="options">Toggle All Off</label>
+			<br>
+			<br>
+			<input type="button" id="alts" style="display:none">
+			<label for="alts" class="options"onclick="altsToggle()">Alts: OFF</label>
+			<input type="button" id="miimoveset" style="display:none">
+			<label for="miimoveset" class="options" onclick="miiToggle()">Mii Moveset: OFF</label>
+			<input type="button" id="remove" style="display:none">
+			<label for="remove" class="options" onclick="removeToggle()">Remove Selected: OFF</label>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+		<script>
+			init();
+			squadInit();
+		</script>
+	</body>
+</html>

@@ -715,9 +715,9 @@ function init() {
 		+ "<a class=\"navlink\" href=\"./alts.html\" id=\"randomAlts\">Alts</a>"
 		+ "<a class=\"navlink\" href=\"./miimoveset.html\" id=\"randomMiis\">Mii Moveset</a>"
 		+ "<a class=\"navlink\" href=\"./ironman.html\" id=\"randomIronman\">Ironman</a>"
+		+ "<a class=\"navlink\" href=\"./squadstrike.html\" id=\"randomSquad\">Squad Strike</a>"
 		+ "<a class=\"navlink\" href=\"#smashdown\">Smashdown</a>"
-		+ "<a class=\"navlink\" href=\"#squadstrike\">Squad Strike</a>"
-		+ "<a class=\"navlink\" href=\"#nuzlocke\">Nuzlocke</a>";
+		+ "<a class=\"navlink\" href=\"#lightlocke\">Lightlocke</a>";
 }
 /* init() */
 
@@ -2369,3 +2369,56 @@ function randFe() {
 	}
 }
 /* randFe() function for ironman.html */
+
+//
+// squadstrike.html
+//
+
+/* randInit() function for random.html initialization */
+function squadInit() {
+	document.getElementById("random").innerHTML = "<image src=\"./assets/fighters/50px-RandomHeadSSBU.png\"><br>Press \"Randomize\" when ready!";
+	
+	let checkboxes = "";
+	for (let i = 0; i < roster.length; ++i) {
+		checkboxes += "<input type=\"checkbox\" id=\"" + roster[i].id + "\" name=\"fighter\" style=\"display:none;\" checked>"
+				+ "<label for=\"" + roster[i].id + "\"><img src=\"./assets/fighters/50px-" + roster[i].id + "HeadSSBU.png\"></label>";
+	}
+	document.getElementById("checkboxes").innerHTML = checkboxes;
+	document.getElementById("randomSquad").style.borderColor = "#000000";
+}
+/* randInit() function for random.html initialization */
+
+/* random() function for random.html random button */
+function randSquad() {
+	let tmp = [];
+	for (let i = 0; i < roster.length; ++i) {
+		if (document.getElementById(roster[i].id).checked) {
+			tmp.push(roster[i]);
+		}
+	}
+	
+	let str = "";
+	if (tmp.length > 0) {
+		let fighter = tmp[Math.floor(Math.random() * tmp.length)];
+		if (fighter.alts != null && alts) {
+			let alt = randAlt();
+			str = "<img src=\"./assets/fighters/50px-" + fighter.id + "Head" + fighter.alts[alt] + "SSBU.png\">"
+				+ "<br>" + fighter.name + " (color " + (alt + 1) + ")";
+		} else if (fighter.series == "Mii" && miis) {
+			str = "<img src=\"./assets/fighters/50px-" + fighter.id + "HeadSSBU.png\">"
+				+ "<br>" + fighter.name + " (" + randMii() + ")";
+		} else {
+			str = "<img src=\"./assets/fighters/50px-" + fighter.id + "HeadSSBU.png\">"
+				+ "<br>" + fighter.name;
+		}
+		
+		if (remove) {
+			document.getElementById(fighter.id).checked = false;
+		}
+	} else {
+		str = "<img src=\"./assets/fighters/50px-RandomHeadSSBU.png\"><br>No fighter is selected!";
+	}
+	
+	document.getElementById("random").innerHTML = str;
+}
+/* random() function for random.html random button */
