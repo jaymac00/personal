@@ -33,6 +33,8 @@ modes = {
 
 map = 'all'
 mode = 'all'
+pick_map = False
+pick_mode = False
 
 map_args = {
 	'-b': 'beginner', '-i': 'intermediate', '-a': 'advanced', '-x': 'expert'
@@ -50,6 +52,10 @@ if len(sys.argv) > 1:
 			map = map_args[arg]
 		elif arg in mode_args.keys():
 			mode = mode_args[arg]
+		elif arg == '--map':
+			pick_map = True
+		elif arg == '--mode':
+			pick_mode = True
 		elif arg == '--help':
 			print('accepted map difficulty args: {}'.format(map_args))
 			print('accepted mode difficulty args: {}'.format(mode_args))
@@ -58,14 +64,17 @@ if len(sys.argv) > 1:
 			print('arg {} not recognized; use --help for a list of args'.format(arg))
 			break
 
-if map == 'all':
+if not pick_map and not pick_mode:
+	pick_map = True
+	pick_mode = True
+
+if pick_map and map == 'all':
 	map = list(maps.keys())[random.randrange(len(list(maps.keys())))]
-if mode == 'all':
+	chosen_map = maps[map]
+	chosen_map = chosen_map[random.randrange(len(chosen_map))]
+	print('map: {}'.format(chosen_map))
+if pick_mode and mode == 'all':
 	mode = list(modes.keys())[random.randrange(len(list(modes.keys())))]
-
-chosen_map = maps[map]
-chosen_map = chosen_map[random.randrange(len(chosen_map))]
-chosen_mode = modes[mode]
-chosen_mode = chosen_mode[random.randrange(len(chosen_mode))]
-
-print('Time to play {} on {}!'.format(chosen_mode, chosen_map))
+	chosen_mode = modes[mode]
+	chosen_mode = chosen_mode[random.randrange(len(chosen_mode))]
+	print('mode: {}'.format(chosen_mode))
