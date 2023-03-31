@@ -1,0 +1,222 @@
+[
+	{
+		"name": "Dart Monkey",
+		"type": "Primary",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Boomerang Monkey",
+		"type": "Primary",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Bomb Shooter",
+		"type": "Primary",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Tack Shooter",
+		"type": "Primary",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Ice Monkey",
+		"type": "Primary",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Glue Gunner",
+		"type": "Primary",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Sniper Monkey",
+		"type": "Military",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Monkey Sub",
+		"type": "Military",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Monkey Buccaneer",
+		"type": "Military",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Monkey Ace",
+		"type": "Military",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Heli Pilot",
+		"type": "Military",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Mortar Monkey",
+		"type": "Military",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Dartling Gunner",
+		"type": "Military",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Wizard Monkey",
+		"type": "Magic",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Super Monkey",
+		"type": "Magic",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Ninja Monkey",
+		"type": "Magic",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Alchemist",
+		"type": "Magic",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Druid",
+		"type": "Magic",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Banana Farm",
+		"type": "Support",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Spike Factory",
+		"type": "Support",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Monkey Village",
+		"type": "Support",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	},
+	{
+		"name": "Engineer Monkey",
+		"type": "Support",
+		"upgrades":
+		{
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
+		}
+	}
+]
