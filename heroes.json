@@ -1,0 +1,164 @@
+{
+	"quincy":{
+		"name":"Quincy",
+		"skins":[
+			"Archer",
+			"Cyber Quincy",
+			"Wolfpack Quincy"
+		],
+		"abilites":[
+			"Rapid Shot",
+			"Storm of Arrows"
+		]
+	},
+	"gwendolin":{
+		"name":"Gwendolin",
+		"skins":[
+			"Pyromaniac",
+			"Harlegwen",
+			"Scientist Gwendolin"
+		],
+		"abilites":[
+			"Cocktail of Fire",
+			"Firestorm"
+		]
+	},
+	"strikerJones":{
+		"name":"Striker Jones",
+		"skins":[
+			"Artillery Commander",
+			"Biker Bones",
+			"Octojones"
+		],
+		"abilites":[
+			"Concussive Shell",
+			"Artillery Command"
+		]
+	},
+	"obynGreenfoot":{
+		"name":"Obyn Greenfoot",
+		"skins":[
+			"Forest Guardian",
+			"Mountain Guardian",
+			"Ocean Guardian"
+		],
+		"abilites":[
+			"Brambles",
+			"Wall of Trees"
+		]
+	},
+	"geraldo":{
+		"name":"Geraldo",
+		"skins":[
+			"Mystic Shopkeeper"
+		],
+		"abilites":[]
+	},
+	"captainChurchill":{
+		"name":"Captain Churchill",
+		"skins":[
+			"Tank",
+			"Sentai Churchill",
+			"Sleigh Churchill"
+		],
+		"abilites":[
+			"Armor Piercing Shells",
+			"MOAB Barrage"
+		]
+	},
+	"benjamin":{
+		"name":"Benjamin",
+		"skins":[
+			"Code Monkey",
+			"Benjammin DJ",
+			"Sushi Bento"
+		],
+		"abilites":[
+			"Biohack",
+			"Syphon Funding"
+		]
+	},
+	"ezili":{
+		"name":"Ezili",
+		"skins":[
+			"Voodoo Monkey",
+			"Galaxili",
+			"Smudge Catt"
+		],
+		"abilites":[
+			"Heartstopper",
+			"Sacrificial Totem",
+			"MOAB Hex"
+		]
+	},
+	"patFusty":{
+		"name":"Pat Fusty",
+		"skins":[
+			"Giant Monkey",
+			"Fusty the Snowman",
+			"Kaiju Pat"
+		],
+		"abilites":[
+			"Rallying Roar",
+			"Big Squeeze"
+		]
+	},
+	"adora":{
+		"name":"Adora",
+		"skins":[
+			"High Priestess",
+			"Joan of Arc Adora",
+			"Voidora"
+		],
+		"abilites":[
+			"The Long Arm of Light",
+			"Blood Sacrifice",
+			"Ball of Light"
+		]
+	},
+	"admiralBrickell":{
+		"name":"Admiral Brickell",
+		"skins":[
+			"Naval Commander",
+			"Dread Pirate Brickell"
+		],
+		"abilites":[
+			"Naval Tactics",
+			"Blast Chain",
+			"Mega Mine"
+		]
+	},
+	"etienne":{
+		"name":"Etienne",
+		"skins":[
+			"Drone Operator",
+			"ETN"
+		],
+		"abilites":[
+			"Drone Swarm",
+			"UCAV"
+		]
+	},
+	"sauda":{
+		"name":"Sauda",
+		"skins":[
+			"Swordmaster",
+			"Viking Sauda"
+		],
+		"abilites":[
+			"Leaping Sword Attack",
+			"Sword Charge"
+		]
+	},
+	"psi":{
+		"name":"Psi",
+		"skins":[
+			"Psionic Monkey",
+			"Psimbals"
+		],
+		"abilites":[
+			"Psychic Blast",
+			"Psionic Scream"
+		]
+	}
+}

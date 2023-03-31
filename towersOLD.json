@@ -1,8 +1,9 @@
-{
-	"dartMonkey":{
-		"name":"Dart Monkey",
-		"type":"Primary",
-		"upgrades":{
+[
+	{
+		"name": "Dart Monkey",
+		"type": "Primary",
+		"upgrades":
+		{
 			"topPath":[
 				"Sharp Shots",
 				"Razor Sharp Shots",
@@ -27,65 +28,29 @@
 		},
 		"paragon":"Apex Plasma Master"
 	},
-	"boomerangMonkey":{
+	{
 		"name": "Boomerang Monkey",
 		"type": "Primary",
 		"upgrades":
 		{
-			"topPath": [
-				"Improved Rangs",
-				"Glaives",
-				"Glaive Ricochet",
-				"M.O.A.R. Glaives",
-				"Glaive Lord"
-			],
-			"middlePath": [
-				"Faster Throwing",
-				"Faster Rangs",
-				"Bionic Boomerang",
-				"Turbo Charge",
-				"Perma Charge"
-			],
-			"bottomPath": [
-				"Long Range Rangs",
-				"Red Hot Rangs",
-				"Kylie Boomerang",
-				"MOAB Press",
-				"MOAB Domination"
-			]
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
 		},
-		"paragon":"Glaive Dominus"
+		"paragon":""
 	},
-	"bombShooter":{
+	{
 		"name": "Bomb Shooter",
 		"type": "Primary",
 		"upgrades":
 		{
-			"topPath": [
-				"Bigger Bombs",
-				"Heavy Bombs",
-				"Really Big Bombs",
-				"Bloon Impact",
-				"Bloon Crush"
-			],
-			"middlePath": [
-				"Faster Reload",
-				"Missle Launcher",
-				"MOAB Mauler",
-				"MOAB Assassin",
-				"MOAB Eliminator"
-			],
-			"bottomPath": [
-				"Extra Range",
-				"Frag Bombs",
-				"Cluster Bombs",
-				"Recursive Cluster",
-				"Bomb Blitz"
-			]
+			"topPath": [],
+			"middlePath": [],
+			"bottomPath": []
 		},
 		"paragon":""
 	},
-	"tackShooter":{
+	{
 		"name": "Tack Shooter",
 		"type": "Primary",
 		"upgrades":
@@ -96,7 +61,7 @@
 		},
 		"paragon":""
 	},
-	"iceMonkey":{
+	{
 		"name": "Ice Monkey",
 		"type": "Primary",
 		"upgrades":
@@ -107,7 +72,7 @@
 		},
 		"paragon":""
 	},
-	"glueGunner":{
+	{
 		"name": "Glue Gunner",
 		"type": "Primary",
 		"upgrades":
@@ -118,7 +83,7 @@
 		},
 		"paragon":""
 	},
-	"sniperMonkey":{
+	{
 		"name": "Sniper Monkey",
 		"type": "Military",
 		"upgrades":
@@ -129,7 +94,7 @@
 		},
 		"paragon":""
 	},
-	"monkeySub":{
+	{
 		"name": "Monkey Sub",
 		"type": "Military",
 		"upgrades":
@@ -140,7 +105,7 @@
 		},
 		"paragon":""
 	},
-	"monkeyBuccaneer":{
+	{
 		"name": "Monkey Buccaneer",
 		"type": "Military",
 		"upgrades":
@@ -149,9 +114,9 @@
 			"middlePath": [],
 			"bottomPath": []
 		},
-		"paragon":"Navarch of the Seas"
+		"paragon":""
 	},
-	"monkeyAce":{
+	{
 		"name": "Monkey Ace",
 		"type": "Military",
 		"upgrades":
@@ -160,9 +125,9 @@
 			"middlePath": [],
 			"bottomPath": []
 		},
-		"paragon":"Goliath Doomship"
+		"paragon":""
 	},
-	"heliPilot":{
+	{
 		"name": "Heli Pilot",
 		"type": "Military",
 		"upgrades":
@@ -173,7 +138,7 @@
 		},
 		"paragon":""
 	},
-	"mortarMonkey":{
+	{
 		"name": "Mortar Monkey",
 		"type": "Military",
 		"upgrades":
@@ -184,7 +149,7 @@
 		},
 		"paragon":""
 	},
-	"dartlingGunner":{
+	{
 		"name": "Dartling Gunner",
 		"type": "Military",
 		"upgrades":
@@ -195,7 +160,7 @@
 		},
 		"paragon":""
 	},
-	"wizardMonkey":{
+	{
 		"name": "Wizard Monkey",
 		"type": "Magic",
 		"upgrades":
@@ -206,7 +171,7 @@
 		},
 		"paragon":""
 	},
-	"superMonkey":{
+	{
 		"name": "Super Monkey",
 		"type": "Magic",
 		"upgrades":
@@ -217,7 +182,7 @@
 		},
 		"paragon":""
 	},
-	"ninjaMonkey":{
+	{
 		"name": "Ninja Monkey",
 		"type": "Magic",
 		"upgrades":
@@ -226,9 +191,9 @@
 			"middlePath": [],
 			"bottomPath": []
 		},
-		"paragon":"Ascended Shadow"
+		"paragon":""
 	},
-	"alchemist":{
+	{
 		"name": "Alchemist",
 		"type": "Magic",
 		"upgrades":
@@ -239,7 +204,7 @@
 		},
 		"paragon":""
 	},
-	"druid":{
+	{
 		"name": "Druid",
 		"type": "Magic",
 		"upgrades":
@@ -250,7 +215,7 @@
 		},
 		"paragon":""
 	},
-	"bananaFarm":{
+	{
 		"name": "Banana Farm",
 		"type": "Support",
 		"upgrades":
@@ -261,7 +226,7 @@
 		},
 		"paragon":""
 	},
-	"spikeFactory":{
+	{
 		"name": "Spike Factory",
 		"type": "Support",
 		"upgrades":
@@ -272,7 +237,7 @@
 		},
 		"paragon":""
 	},
-	"monkeyVillage":{
+	{
 		"name": "Monkey Village",
 		"type": "Support",
 		"upgrades":
@@ -283,7 +248,7 @@
 		},
 		"paragon":""
 	},
-	"engineerMonkey":{
+	{
 		"name": "Engineer Monkey",
 		"type": "Support",
 		"upgrades":
@@ -292,6 +257,6 @@
 			"middlePath": [],
 			"bottomPath": []
 		},
-		"paragon":"Master Builder"
+		"paragon":""
 	}
-}
+]

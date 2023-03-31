@@ -1,0 +1,22 @@
+{
+	"easy":[
+		"Standard",
+		"Primary Only",
+		"Deflation"
+	],
+	"medium":[
+		"Standard",
+		"Military Only",
+		"Apopalypse",
+		"Reverse"
+	],
+	"hard":[
+		"Standard",
+		"Magic Monkeys Only",
+		"Double HP MOABS",
+		"Half Cash",
+		"Alternate Bloons Rounds",
+		"Impoppable",
+		"CHIMPS"
+	]
+}
