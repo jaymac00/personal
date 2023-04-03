@@ -50,8 +50,10 @@ if len(sys.argv) > 1:
 			pass
 		elif arg in map_args.keys():
 			map = map_args[arg]
+			pick_map = True
 		elif arg in mode_args.keys():
 			mode = mode_args[arg]
+			pick_mode = True
 		elif arg == '--map':
 			pick_map = True
 		elif arg == '--mode':
@@ -73,8 +75,17 @@ if pick_map and map == 'all':
 	chosen_map = maps[map]
 	chosen_map = chosen_map[random.randrange(len(chosen_map))]
 	print('map: {}'.format(chosen_map))
+elif pick_map:
+	chosen_map = maps[map]
+	chosen_map = chosen_map[random.randrange(len(maps[map]))]
+	print('map: {}'.format(chosen_map))
+
 if pick_mode and mode == 'all':
 	mode = list(modes.keys())[random.randrange(len(list(modes.keys())))]
 	chosen_mode = modes[mode]
 	chosen_mode = chosen_mode[random.randrange(len(chosen_mode))]
+	print('mode: {}'.format(chosen_mode))
+elif pick_mode:
+	chosen_mode = modes[mode]
+	chosen_mode = chosen_mode[random.randrange(len(modes[mode]))]
 	print('mode: {}'.format(chosen_mode))
